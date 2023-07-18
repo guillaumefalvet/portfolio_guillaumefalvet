@@ -8,8 +8,7 @@ export const metadata: Metadata = {
   title: 'Falvet Guillaume',
   description: 'Développeur web',
   other: {
-    'apple-mobile-web-app-status-bar-style': 'black',
-    'theme-color': '#F0DCCA',
+    'theme-color': '#4E6151',
   },
 };
 
