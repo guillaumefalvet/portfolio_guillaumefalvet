@@ -49,12 +49,12 @@ export default function Home() {
             </p>
             <p className="text-md py-5 leading-8 text-gray-800 mx-auto md:text-xl">
               Durant ma formation, j&apos;ai pris la décision de me spécialiser
-              davantage dans le domaine du backend du développement web. J'ai
-              trouvé un réel intérêt pour la gestion des bases de données, la
-              logique des algorithmes et la création d&apos;APIs robustes.
-              Cependant, je tiens à souligner que j&apos;ai également une
-              passion pour le design. J&apos;apprécie l&apos;aspect visuel des
-              interfaces utilisateur et je suis soucieux de créer des
+              davantage dans le domaine du backend du développement web.
+              J&apos;ai trouvé un réel intérêt pour la gestion des bases de
+              données, la logique des algorithmes et la création d&apos;APIs
+              robustes. Cependant, je tiens à souligner que j&apos;ai également
+              une passion pour le design. J&apos;apprécie l&apos;aspect visuel
+              des interfaces utilisateur et je suis soucieux de créer des
               expériences esthétiques et conviviales pour les utilisateurs.
               Cette combinaison de compétences en backend et en design me permet
               d&apos;avoir une vision globale des projets web et de contribuer à
