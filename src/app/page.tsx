@@ -1,8 +1,6 @@
-import Link from 'next/link';
 import NavBar from './components/NavBar';
 import Projects from './components/Projects';
 import Footer from './components/Footer';
-import ProfilePictore from '../../public/profilepicture.png';
 import Contact from './components/Contact';
 
 export default function Home() {
