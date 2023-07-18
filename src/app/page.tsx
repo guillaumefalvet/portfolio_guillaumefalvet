@@ -14,7 +14,7 @@ export default function Home() {
               <div className="pb-5">
                 <img
                   className="h-60 rounded-full shadow-lg md:mr-10 xsm:mr-0"
-                  src="./pngegg.png"
+                  src="./withoutbg.png"
                   alt="Photo de profile de Guillaume Falvet"
                 />
               </div>
