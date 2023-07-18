@@ -5,10 +5,10 @@ import SocialMedia from './components/SocialMedia';
 
 export default function Home() {
   return (
-    <main className="px-10 bg-gradient-to-t from-moonstone via-feldgrau to-feldgrau xsm:px-5">
+    <main className="px-10 bg-gradient-to-t from-moonstone via-moonstone to-feldgrau xsm:px-5">
       <NavBar />
       <div className="flex justify-center">
-        <section className="w-fit bg-black bg-opacity-30 rounded-3xl xsm:w-screen md:w-3/4 sm:w-auto text-white">
+        <section className="w-fit bg-black bg-opacity-50 rounded-3xl xsm:w-screen md:w-3/4 sm:w-auto text-white">
           <div className="text-center p-10 py-10">
             <div className="flex flex-wrap justify-center mb-14">
               <div className="pb-5">
