@@ -8,12 +8,12 @@ export default function Home() {
     <main className="px-10 bg-gradient-to-t from-moonstone via-feldgrau to-van-dyke xsm:px-5">
       <NavBar />
       <div className="flex justify-center">
-        <section className="w-fit bg-black bg-opacity-50 rounded-3xl xsm:w-screen md:w-3/4 sm:w-auto text-white">
+        <section className="w-fit bg-black bg-opacity-30 rounded-3xl xsm:w-screen md:w-3/4 sm:w-auto text-white">
           <div className="text-center p-10 py-10">
             <div className="flex flex-wrap justify-center mb-14">
               <div className="pb-5">
                 <img
-                  className="h-44 mb-3 rounded-full shadow-lg mr-10"
+                  className=" h-60 rounded-full shadow-lg mr-10"
                   src="./pngegg.png"
                   alt="Photo de profile de Guillaume Falvet"
                 />
