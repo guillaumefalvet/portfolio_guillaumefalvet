@@ -21,7 +21,7 @@ export default function NavBar() {
         <li>
           <Link
             className="bg-cyan-500 px-2 py-2 rounded-md ml-8 text-xl"
-            href="#"
+            href="./cv_falvet_guillaume.pdf"
           >
             CV
           </Link>
