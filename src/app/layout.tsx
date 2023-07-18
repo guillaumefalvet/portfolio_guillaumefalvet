@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   description: 'Développeur web',
   other: {
     'apple-mobile-web-app-status-bar-style': 'black',
+    'theme-color': '#F0DCCA',
   },
 };
 
