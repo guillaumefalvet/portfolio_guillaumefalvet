@@ -20,7 +20,7 @@ export default function Projects() {
                   target="_blank"
                 >
                   <img
-                    className="rounded-t-3xl w-full h-52"
+                    className="rounded-t-3xl w-full h-52 object-cover"
                     src={`./${project.link_image}`}
                     alt={`preview of ${project.name} website`}
                   />
