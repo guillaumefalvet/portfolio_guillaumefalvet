@@ -7,6 +7,9 @@ const inter = Inter({ subsets: ['latin'] });
 export const metadata: Metadata = {
   title: 'Falvet Guillaume',
   description: 'Développeur web',
+  other: {
+    'apple-mobile-web-app-status-bar-style': 'black',
+  },
 };
 
 export default function RootLayout({
