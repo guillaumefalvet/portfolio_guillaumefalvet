@@ -2,7 +2,7 @@
   {
     "name": "Website: Esport Team",
     "my_role": "Lead Backend / Git Master",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sed turpis sit amet lacus rhoncus posuere. Etiam quis nibh urna. Aenean faucibus urna leo, eu accumsan nunc interdum ultrices. Suspendisse blandit orci sed pellentesque vestibulum. Cras accumsan aliquet tortor, eget.",
+    "description": "Application de gestion de contenu pour une équipe Esport fictif, il offre une présentation détaillée d'une équipe d'esport, des actualités, des profils des membres, une fonctionnalité de recrutement et un calendrier des événements. Dashboard admin pour gérer les contenus liés aux articles, à l'équipe, aux joueurs et aux événements.",
     "group_project": true,
     "other_members": [
       {
@@ -56,6 +56,10 @@
         "file_name": "express-original.svg"
       },
       {
+        "label": "JavaScript",
+        "file_name": "javascript-original.svg"
+      },
+      {
         "label": "PostgtreSQL",
         "file_name": "postgresql-original.svg"
       },
@@ -73,10 +77,18 @@
   {
     "name": "Website: Kanban List",
     "my_role": "dev",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sed turpis sit amet lacus rhoncus posuere. Etiam quis nibh urna. Aenean faucibus urna leo, eu accumsan nunc interdum ultrices. Suspendisse blandit orci sed pellentesque vestibulum. Cras accumsan aliquet tortor, eget. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sed turpis sit amet lacus rhoncus posuere. Etiam quis nibh urna. Aenean faucibus urna leo, eu accumsan nunc interdum ultrices. Suspendisse blandit orci sed pellentesque vestibulum. Cras accumsan aliquet tortor, eget.",
+    "description": "Durant ma formation j'ai développé une application web en utilisant Express, Cors et Sequelize, basée sur le concept Kanban de Trello. Son backend gère les opérations essentielles, tandis que le front-end offre une interface utilisateur statique conviviale. Les utilisateurs peuvent organiser leurs tâches de manière fluide et intuitive, en suivant leur progression à travers des colonnes personnalisables. L'application facilite la gestion et la visualisation des projets grâce à son approche Kanban simplifiée.",
     "group_project": false,
     "other_members": [],
     "technologie_used": [
+      {
+        "label": "NodeJS",
+        "file_name": "nodejs-original.svg"
+      },
+      {
+        "label": "Express",
+        "file_name": "express-original.svg"
+      },
       {
         "label": "JavaScript",
         "file_name": "javascript-original.svg"
@@ -90,6 +102,10 @@
         "file_name": "sequelize-original.svg"
       },
       {
+        "label": "SortableJS",
+        "file_name": "sortable.svg"
+      },
+      {
         "label": "Vite",
         "file_name": "vite.svg"
       }
@@ -101,10 +117,22 @@
   {
     "name": "Website: FF Card collection",
     "my_role": "dev",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sed turpis sit amet lacus rhoncus posuere. Etiam quis nibh urna. Aenean faucibus urna leo, eu accumsan nunc interdum ultrices. Suspendisse blandit orci sed pellentesque vestibulum. Cras accumsan aliquet tortor, eget. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sed turpis sit amet lacus rhoncus posuere. Etiam quis nibh urna. Aenean faucibus urna leo, eu accumsan nunc interdum ultrices. Suspendisse blandit orci sed pellentesque vestibulum. Cras accumsan aliquet tortor, eget.",
+    "description": "J'ai développé une application web de collection de cartes Final Fantasy en utilisant Express, EJS, PG (datamapper maison) et Express Session. Les utilisateurs peuvent rechercher des cartes, créer des decks personnalisés sauvegardés localement, et explorer les détails des cartes.",
     "group_project": false,
     "other_members": [],
     "technologie_used": [
+      {
+        "label": "NodeJS",
+        "file_name": "nodejs-original.svg"
+      },
+      {
+        "label": "Express",
+        "file_name": "express-original.svg"
+      },
+      {
+        "label": "Ejs",
+        "file_name": "ejs.svg"
+      },
       {
         "label": "PostgreSQL",
         "file_name": "postgresql-original.svg"
@@ -121,7 +149,7 @@
   {
     "name": "Automation: Download Folder organizer",
     "my_role": "dev",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sed turpis sit amet lacus rhoncus posuere. Etiam quis nibh urna. Aenean faucibus urna leo, eu accumsan nunc interdum ultrices. Suspendisse blandit orci sed pellentesque vestibulum. Cras accumsan aliquet tortor, eget, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sed turpis sit amet lacus rhoncus posuere. Etiam quis nibh urna. Aenean faucibus urna leo, eu accumsan nunc interdum ultrices. Suspendisse blandit orci sed pellentesque vestibulum. Cras accumsan aliquet tortor, eget.",
+    "description": "Petit logiciel d'automation pour trier le dossier 'download' et le garder clean 👌, l'application range les fichiers dans un dossier spécifique selon leur extensions",
     "group_project": false,
     "other_members": [],
     "technologie_used": [

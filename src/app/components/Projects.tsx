@@ -12,7 +12,7 @@ export default function Projects() {
           return (
             <div
               key={project.name}
-              className="m-2 w-96 rounded-3xl shadow dark:bg-gray-800 dark:border-gray-700 bg-van-dyke bg-opacity-50 flex flex-col justify-between hover:shadow-[0_20px_50px_rgba(82,_178,_207,_0.7)]"
+              className="m-2 w-96 md:[width:35%] rounded-3xl shadow dark:bg-gray-800 dark:border-gray-700 bg-van-dyke bg-opacity-50 flex flex-col justify-between hover:shadow-[0_20px_50px_rgba(82,_178,_207,_0.7)]"
             >
               <div>
                 <Link
@@ -31,15 +31,20 @@ export default function Projects() {
                       {project.name}
                     </h5>
                   </Link>
-                  <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                  <p className="font-normal text-gray-700 dark:text-gray-400">
                     {project.description}
                   </p>
+                </div>
+              </div>
+
+              <div className="p-5">
+                <div>
                   <div className="text-left mt-5">
                     {(() => {
                       if (project.group_project) {
-                        return <div>Projet de groupe</div>;
+                        return <div>Projet de groupe:</div>;
                       } else {
-                        return <div>Projet solo</div>;
+                        return <div>Projet fait solo</div>;
                       }
                     })()}
                     {project.group_project && (
@@ -60,11 +65,6 @@ export default function Projects() {
                       </>
                     )}
                   </div>
-                </div>
-              </div>
-
-              <div className="p-5 mt-5">
-                <div>
                   <p className=" text-center">Liste des technologies: </p>
                   {project.technologie_used.map((language) => (
                     <div
