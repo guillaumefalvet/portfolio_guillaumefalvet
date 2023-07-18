@@ -13,7 +13,7 @@ export default function Home() {
             <div className="flex flex-wrap justify-center mb-14">
               <div className="pb-5">
                 <img
-                  className=" h-60 rounded-full shadow-lg md:mr-10 xsm:mr-0"
+                  className="h-60 rounded-full shadow-lg md:mr-10 xsm:mr-0"
                   src="./pngegg.png"
                   alt="Photo de profile de Guillaume Falvet"
                 />
