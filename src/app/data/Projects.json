@@ -96,31 +96,27 @@
     ],
     "link_image": "kanban.png",
     "link_frontend": "https://kanban-list-production.up.railway.app/",
-    "link_backend": "https://kanban-list-production.up.railway.app/",
-    "github_front": "https://github.com/guillaumefalvet/kanban-list",
-    "github_back": "https://github.com/guillaumefalvet/kanban-list"
+    "github_front": "https://github.com/guillaumefalvet/kanban-list"
   },
   {
-    "name": "Website: Final Fantasy card collection",
+    "name": "Website: FF Card collection",
     "my_role": "dev",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sed turpis sit amet lacus rhoncus posuere. Etiam quis nibh urna. Aenean faucibus urna leo, eu accumsan nunc interdum ultrices. Suspendisse blandit orci sed pellentesque vestibulum. Cras accumsan aliquet tortor, eget.",
     "group_project": false,
     "other_members": [],
     "technologie_used": [
       {
-        "label": "psql",
+        "label": "PostgreSQL",
         "file_name": "postgresql-original.svg"
       },
       {
-        "label": "javascript",
+        "label": "JavaScript",
         "file_name": "javascript-original.svg"
       }
     ],
     "link_image": "final-fantasy-card-website.png",
     "link_frontend": "https://final-fantasy-card-website-production.up.railway.app/",
-    "link_backend": "https://final-fantasy-card-website-production.up.railway.app/",
-    "github_front": "https://github.com/guillaumefalvet/final-fantasy-card-website",
-    "github_back": "https://github.com/guillaumefalvet/final-fantasy-card-website"
+    "github_front": "https://github.com/guillaumefalvet/final-fantasy-card-website"
   },
   {
     "name": "Automation: Download Folder organizer",
@@ -135,9 +131,6 @@
       }
     ],
     "link_image": "logs.png",
-    "link_frontend": "https://github.com/guillaumefalvet/sort_and_organize_download_folder",
-    "link_backend": "https://github.com/guillaumefalvet/sort_and_organize_download_folder",
-    "github_front": "https://github.com/guillaumefalvet/sort_and_organize_download_folder",
-    "github_back": "https://github.com/guillaumefalvet/sort_and_organize_download_folder"
+    "github": "https://github.com/guillaumefalvet/sort_and_organize_download_folder"
   }
 ]

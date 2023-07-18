@@ -4,7 +4,7 @@ import {
   AiFillTwitterSquare,
 } from 'react-icons/ai';
 import Link from 'next/link';
-export default function Footer() {
+export default function SocialMedia() {
   return (
     <div className="text-4xl flex justify-center gap-2 py-3 text-gray-600">
       <Link target="_blank" href="https://github.com/guillaumefalvet">

@@ -1,7 +1,7 @@
 import NavBar from './components/NavBar';
 import Projects from './components/Projects';
-import Footer from './components/Footer';
 import Contact from './components/Contact';
+import SocialMedia from './components/SocialMedia';
 
 export default function Home() {
   return (
@@ -23,6 +23,7 @@ export default function Home() {
             <h3 className="text-2xl py-2 md:text-3xl text-beige-react text-mint-cream dev-cursor">
               Developpeur Javascript
             </h3>
+            <SocialMedia />
             <p className="text-md py-5 leading-8 text-gray-800 mx-auto md:text-xl">
               Bienvenue sur mon site ! Je m&apos;appelle Guillaume Falvet et je
               suis actuellement en reconversion professionnelle dans le
@@ -50,7 +51,7 @@ export default function Home() {
           <Projects />
         </section>
       </div>
-      <Footer />
+      <SocialMedia />
     </main>
   );
 }
