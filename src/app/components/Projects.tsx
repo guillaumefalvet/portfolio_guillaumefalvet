@@ -16,7 +16,7 @@ export default function Projects() {
             >
               <div>
                 <Link
-                  href={project.github || project.link_frontend}
+                  href={project.github || project.link_frontend || ''}
                   target="_blank"
                 >
                   <img
