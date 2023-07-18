@@ -25,3 +25,43 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+@font-face {
+  font-family: 'samantha-signature';
+  src: url('../../public/Samantha\ Signature.otf');
+}
+.main_section {
+  margin: 0 auto auto;
+}
+.dev-cursor:before {
+  content: '';
+  display: inline-block;
+  background-color: #ffffff;
+  width: 10px;
+  height: 25px;
+  -webkit-animation: blink 1s step-end infinite;
+  animation: blink 1s step-end infinite;
+}
+
+@-webkit-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

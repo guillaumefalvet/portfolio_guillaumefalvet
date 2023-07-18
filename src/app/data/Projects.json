@@ -1,0 +1,143 @@
+[
+  {
+    "name": "Website: Esport Team",
+    "my_role": "Lead Backend / Git Master",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sed turpis sit amet lacus rhoncus posuere. Etiam quis nibh urna. Aenean faucibus urna leo, eu accumsan nunc interdum ultrices. Suspendisse blandit orci sed pellentesque vestibulum. Cras accumsan aliquet tortor, eget.",
+    "group_project": true,
+    "other_members": [
+      {
+        "first_name": "Quentin",
+        "last_name": "Joanon",
+        "role": "Lead dev front",
+        "link": "https://sasass.com"
+      },
+      {
+        "first_name": "Ali",
+        "last_name": "Hadj Cherif",
+        "role": "Dev",
+        "link": "https://sasass.com"
+      },
+      {
+        "first_name": "Manu",
+        "last_name": "Chevalier",
+        "role": "Dev",
+        "link": "https://sasass.com"
+      },
+      {
+        "first_name": "Axel",
+        "last_name": "Martin",
+        "role": "Dev",
+        "link": "https://sasass.com"
+      }
+    ],
+    "technologie_used": [
+      {
+        "label": "React",
+        "file_name": "react-original.svg"
+      },
+      {
+        "label": "Sass",
+        "file_name": "sass-original.svg"
+      },
+      {
+        "label": "NextJS",
+        "file_name": "nextjs-original.svg"
+      },
+      {
+        "label": "TypeScript",
+        "file_name": "typescript-original.svg"
+      },
+      {
+        "label": "NodeJS",
+        "file_name": "nodejs-original.svg"
+      },
+      {
+        "label": "Express",
+        "file_name": "express-original.svg"
+      },
+      {
+        "label": "PostgtreSQL",
+        "file_name": "postgresql-original.svg"
+      },
+      {
+        "label": "EsLint",
+        "file_name": "eslint-original.svg"
+      }
+    ],
+    "link_image": "victoryzone.png",
+    "link_frontend": "https://www.victoryzone.team/",
+    "link_backend": "https://esport-website-backend-production.up.railway.app/api-docs/",
+    "github_front": "https://github.com/QuentinJoanon/VictoryZone-Front",
+    "github_back": "https://github.com/guillaumefalvet/esport-website-backend"
+  },
+  {
+    "name": "Website: Kanban List",
+    "my_role": "dev",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sed turpis sit amet lacus rhoncus posuere. Etiam quis nibh urna. Aenean faucibus urna leo, eu accumsan nunc interdum ultrices. Suspendisse blandit orci sed pellentesque vestibulum. Cras accumsan aliquet tortor, eget.",
+    "group_project": false,
+    "other_members": [],
+    "technologie_used": [
+      {
+        "label": "JavaScript",
+        "file_name": "javascript-original.svg"
+      },
+      {
+        "label": "PostgreSQL",
+        "file_name": "postgresql-original.svg"
+      },
+      {
+        "label": "Sequelize",
+        "file_name": "sequelize-original.svg"
+      },
+      {
+        "label": "Vite",
+        "file_name": "vite.svg"
+      }
+    ],
+    "link_image": "kanban.png",
+    "link_frontend": "https://kanban-list-production.up.railway.app/",
+    "link_backend": "https://kanban-list-production.up.railway.app/",
+    "github_front": "https://github.com/guillaumefalvet/kanban-list",
+    "github_back": "https://github.com/guillaumefalvet/kanban-list"
+  },
+  {
+    "name": "Website: Final Fantasy card collection",
+    "my_role": "dev",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sed turpis sit amet lacus rhoncus posuere. Etiam quis nibh urna. Aenean faucibus urna leo, eu accumsan nunc interdum ultrices. Suspendisse blandit orci sed pellentesque vestibulum. Cras accumsan aliquet tortor, eget.",
+    "group_project": false,
+    "other_members": [],
+    "technologie_used": [
+      {
+        "label": "psql",
+        "file_name": "postgresql-original.svg"
+      },
+      {
+        "label": "javascript",
+        "file_name": "javascript-original.svg"
+      }
+    ],
+    "link_image": "final-fantasy-card-website.png",
+    "link_frontend": "https://final-fantasy-card-website-production.up.railway.app/",
+    "link_backend": "https://final-fantasy-card-website-production.up.railway.app/",
+    "github_front": "https://github.com/guillaumefalvet/final-fantasy-card-website",
+    "github_back": "https://github.com/guillaumefalvet/final-fantasy-card-website"
+  },
+  {
+    "name": "Automation: Download Folder organizer",
+    "my_role": "dev",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sed turpis sit amet lacus rhoncus posuere. Etiam quis nibh urna. Aenean faucibus urna leo, eu accumsan nunc interdum ultrices. Suspendisse blandit orci sed pellentesque vestibulum. Cras accumsan aliquet tortor, eget.",
+    "group_project": false,
+    "other_members": [],
+    "technologie_used": [
+      {
+        "label": "Python",
+        "file_name": "python-original.svg"
+      }
+    ],
+    "link_image": "logs.png",
+    "link_frontend": "https://github.com/guillaumefalvet/sort_and_organize_download_folder",
+    "link_backend": "https://github.com/guillaumefalvet/sort_and_organize_download_folder",
+    "github_front": "https://github.com/guillaumefalvet/sort_and_organize_download_folder",
+    "github_back": "https://github.com/guillaumefalvet/sort_and_organize_download_folder"
+  }
+]
