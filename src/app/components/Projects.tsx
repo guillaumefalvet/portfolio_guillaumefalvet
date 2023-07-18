@@ -5,7 +5,7 @@ export default function Projects() {
   return (
     <>
       <h3 className="text-4xl py-2 text-beige-react text-mint-cream text-center font-medium">
-        Projects
+        Projets
       </h3>
       <div className="flex flex-wrap justify-center p-10 py-10">
         {JsonData.map((project) => {
@@ -42,9 +42,9 @@ export default function Projects() {
                   <div className="text-left mt-5">
                     {(() => {
                       if (project.group_project) {
-                        return <div>Projet de groupe:</div>;
+                        return <p>Projet de groupe:</p>;
                       } else {
-                        return <div>Projet fait solo</div>;
+                        return <p>Projet fait seule</p>;
                       }
                     })()}
                     {project.group_project && (
