@@ -12,7 +12,7 @@ export default function Projects() {
           return (
             <div
               key={project.name}
-              className="m-2 w-96 rounded-3xl shadow dark:bg-gray-800 dark:border-gray-700 bg-almond bg-opacity-20 flex flex-col justify-between hover:shadow-[0_20px_50px_rgba(78,_78,_81,_0.7)]"
+              className="m-2 w-96 rounded-3xl shadow dark:bg-gray-800 dark:border-gray-700 bg-almond bg-opacity-20 flex flex-col justify-between hover:shadow-[0_20px_50px_rgba(82,_178,_207,_0.7)]"
             >
               <div>
                 <Link

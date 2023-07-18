@@ -5,25 +5,30 @@ import SocialMedia from './components/SocialMedia';
 
 export default function Home() {
   return (
-    <main className="px-10 text-sage bg-gradient-to-tl from-moonstone via-feldgrau to-van-dyke xsm:px-5">
+    <main className="px-10 bg-gradient-to-t from-moonstone via-feldgrau to-van-dyke xsm:px-5">
       <NavBar />
       <div className="flex justify-center">
-        <section className="w-fit bg-almond bg-opacity-60 rounded-3xl xsm:w-screen md:w-3/4 sm:w-auto text-umber">
+        <section className="w-fit bg-black bg-opacity-50 rounded-3xl xsm:w-screen md:w-3/4 sm:w-auto text-white">
           <div className="text-center p-10 py-10">
-            <div className="flex flex-col items-center pb-5">
-              <img
-                className="w-50 h-50 mb-3 rounded-full shadow-lg"
-                src="./il_fullxfull.4337929119_si67-removebg-preview.png"
-                alt="Photo de profile de Guillaume Falvet"
-              />
+            <div className="flex flex-wrap justify-center mb-14">
+              <div className="pb-5">
+                <img
+                  className="h-44 mb-3 rounded-full shadow-lg mr-10"
+                  src="./pngegg.png"
+                  alt="Photo de profile de Guillaume Falvet"
+                />
+              </div>
+              <div className="text-left mt-10">
+                <h1 className="text-5xl py-2 text-teal-600 font-medium md:text-6xl text-left">
+                  Guillaume Falvet
+                </h1>
+                <h3 className="text-2xl py-2 md:text-3xl text-beige-react text-mint-cream dev-cursor text-left">
+                  Developpeur Javascript
+                </h3>
+              </div>
             </div>
-            <h1 className="text-5xl py-2 text-teal-600 font-medium md:text-6xl">
-              Guillaume Falvet
-            </h1>
-            <h3 className="text-2xl py-2 md:text-3xl text-beige-react text-mint-cream dev-cursor">
-              Developpeur Javascript
-            </h3>
             <SocialMedia />
+
             <p className="text-md py-5 leading-8 text-gray-800 mx-auto md:text-xl">
               Bienvenue sur mon site ! Je m&apos;appelle Guillaume Falvet et je
               suis actuellement en reconversion professionnelle dans le
