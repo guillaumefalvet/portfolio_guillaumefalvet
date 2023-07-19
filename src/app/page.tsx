@@ -1,9 +1,17 @@
 import NavBar from './components/NavBar';
 import Projects from './components/Projects';
-import Contact from './components/Contact';
+import Image from 'next/image';
+import profilePicture from '../../public/withoutbg.png';
 import SocialMedia from './components/SocialMedia';
 
 export default function Home() {
+  const profilePictureWidth = 300;
+  function getHeightAspectRation(width: number) {
+    const ratioWidth = 100;
+    const rationHeight = 113;
+    const aspectRatio = (width * rationHeight) / ratioWidth;
+    return aspectRatio;
+  }
   return (
     <main className="px-10 bg-gradient-to-t from-moonstone via-moonstone to-feldgrau xsm:px-5">
       <NavBar />
@@ -12,9 +20,11 @@ export default function Home() {
           <div className="text-center p-10 py-10">
             <div className="flex flex-wrap justify-center mb-14">
               <div className="pb-5">
-                <img
-                  className="h-60 rounded-full shadow-lg md:mr-10 xsm:mr-0"
-                  src="./withoutbg.png"
+                <Image
+                  className="rounded-full shadow-lg md:mr-10 xsm:mr-0"
+                  src={profilePicture}
+                  width={profilePictureWidth}
+                  height={getHeightAspectRation(profilePictureWidth)}
                   alt="Photo de profile de Guillaume Falvet"
                 />
               </div>
