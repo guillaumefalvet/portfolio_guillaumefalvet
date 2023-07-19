@@ -1,6 +1,32 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import JsonData from '../data/Projects.json';
+interface Project {
+  name: string;
+  my_role: string;
+  description: string;
+  group_project: boolean;
+  other_members: Member[];
+  technologie_used: Technology[];
+  link_image: string;
+  link_frontend?: string;
+  link_backend?: string;
+  github_front?: string;
+  github_back?: string;
+  github?: string;
+}
 
+interface Member {
+  first_name: string;
+  last_name: string;
+  role: string;
+  link: string;
+}
+
+interface Technology {
+  label: string;
+  file_name: string;
+}
 export default function Projects() {
   return (
     <>
@@ -8,7 +34,7 @@ export default function Projects() {
         Projets
       </h3>
       <div className="flex flex-wrap justify-center p-10 py-10">
-        {JsonData.map((project) => {
+        {JsonData.map((project: Project) => {
           return (
             <div
               key={project.name}
@@ -19,9 +45,11 @@ export default function Projects() {
                   href={project.github || project.link_frontend || ''}
                   target="_blank"
                 >
-                  <img
+                  <Image
                     className="rounded-t-3xl w-full h-52 object-cover"
-                    src={`./${project.link_image}`}
+                    width={500}
+                    height={500}
+                    src={`/${project.link_image}`}
                     alt={`preview of ${project.name} website`}
                   />
                 </Link>
@@ -51,7 +79,7 @@ export default function Projects() {
                       <>
                         <p>Mon Rôle: {project.my_role}</p>
                         <ul>
-                          {project.other_members.map((member) => (
+                          {project.other_members.map((member: Member) => (
                             <li key={member.first_name}>
                               <p>
                                 {member.role}:{' '}
@@ -66,19 +94,21 @@ export default function Projects() {
                     )}
                   </div>
                   <p className=" text-center">Liste des technologies: </p>
-                  {project.technologie_used.map((language) => (
+                  {project.technologie_used.map((technology: Technology) => (
                     <div
-                      key={language.label}
+                      key={technology.label}
                       className="inline-block group p-2 mx-auto"
                     >
-                      <img
-                        key={language.label}
+                      <Image
+                        key={technology.label}
                         className="h-10 ml-1 mr-1"
-                        src={`./${language.file_name}`}
-                        alt={language.label}
+                        height={45}
+                        width={45}
+                        src={`./${technology.file_name}`}
+                        alt={technology.label}
                       />
                       <span className="group-hover:opacity-100 transition-opacity bg-gray-800  text-gray-100 absolute opacity-0 text-xl">
-                        {language.label}
+                        {technology.label}
                       </span>
                     </div>
                   ))}
@@ -91,7 +121,7 @@ export default function Projects() {
                         type="button"
                         className="py-2.5 px-5 mr-2 mb-2 text-sm font-medium text-gray-900 text-white focus:outline-none bg-feldgrau rounded-full border border-gray-200 hover:bg-moonstone hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
                       >
-                        link
+                        Lien
                       </button>
                     </a>
                   ) : (
@@ -103,7 +133,7 @@ export default function Projects() {
                         type="button"
                         className="py-2.5 px-5 mr-2 mb-2 text-sm font-medium text-gray-900 text-white focus:outline-none bg-feldgrau rounded-full border border-gray-200 hover:bg-moonstone hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
                       >
-                        docs api
+                        Docs API
                       </button>
                     </a>
                   ) : (
@@ -115,7 +145,7 @@ export default function Projects() {
                         type="button"
                         className="py-2.5 px-5 mr-2 mb-2 text-sm font-medium text-gray-900 text-white focus:outline-none bg-feldgrau rounded-full border border-gray-200 hover:bg-moonstone hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
                       >
-                        code
+                        Code
                       </button>
                     </a>
                   ) : (
@@ -127,7 +157,7 @@ export default function Projects() {
                         type="button"
                         className="py-2.5 px-5 mr-2 mb-2 text-sm font-medium text-gray-900 text-white focus:outline-none bg-feldgrau rounded-full border border-gray-200 hover:bg-moonstone hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
                       >
-                        code api
+                        Code API
                       </button>
                     </a>
                   ) : (
@@ -139,7 +169,7 @@ export default function Projects() {
                         type="button"
                         className="py-2.5 px-5 mr-2 mb-2 text-sm font-medium text-gray-900 text-white focus:outline-none bg-feldgrau rounded-full border border-gray-200 hover:bg-moonstone hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
                       >
-                        code
+                        Code
                       </button>
                     </a>
                   ) : (

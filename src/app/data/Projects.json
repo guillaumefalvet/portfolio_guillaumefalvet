@@ -115,6 +115,37 @@
     "github_front": "https://github.com/guillaumefalvet/kanban-list"
   },
   {
+    "name": "Website: Mon portfolio",
+    "my_role": "dev",
+    "description": "J'ai réalisé mon portfolio pour pratiquer React. J'ai utilisé TypeScript comme language avec la config Airbnb pour ESLint et finalement tailwind pour le css.",
+    "group_project": false,
+    "other_members": [],
+    "technologie_used": [
+      {
+        "label": "React",
+        "file_name": "react-original.svg"
+      },
+      {
+        "label": "NextJS",
+        "file_name": "nextjs-original.svg"
+      },
+      {
+        "label": "TypeScript",
+        "file_name": "typescript-original.svg"
+      },
+      {
+        "label": "EsLint",
+        "file_name": "eslint-original.svg"
+      },
+      {
+        "label": "TailwindCSS",
+        "file_name": "tailwindcss-plain.svg"
+      }
+    ],
+    "link_image": "portfolio.png",
+    "link_frontend": "/"
+  },
+  {
     "name": "Website: FF Card collection",
     "my_role": "dev",
     "description": "J'ai développé une application web de collection de cartes Final Fantasy en utilisant Express, EJS, PG (datamapper maison) et Express Session. Les utilisateurs peuvent rechercher des cartes, créer des decks personnalisés sauvegardés localement, et explorer les détails des cartes.",
