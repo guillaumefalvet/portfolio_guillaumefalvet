@@ -178,9 +178,9 @@
     "github_front": "https://github.com/guillaumefalvet/final-fantasy-card-website"
   },
   {
-    "name": "Automation: Download Folder organizer",
+    "name": "Automatisation: Download Folder organizer",
     "my_role": "dev",
-    "description": "Petit logiciel d'automation pour trier le dossier 'download' et le garder clean 👌, l'application range les fichiers dans un dossier spécifique selon leur extensions",
+    "description": "Petit logiciel d'Automatisation pour trier le dossier 'download' et le garder clean 👌, l'application range les fichiers dans un dossier spécifique selon leur extensions",
     "group_project": false,
     "other_members": [],
     "technologie_used": [
