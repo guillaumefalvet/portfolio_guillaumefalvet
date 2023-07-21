@@ -9,31 +9,31 @@
         "first_name": "Quentin",
         "last_name": "Joanon",
         "role": "Lead dev front",
-        "link": "https://sasass.com"
+        "link": ""
       },
       {
         "first_name": "Ali",
         "last_name": "Hadj Cherif",
         "role": "Dev",
-        "link": "https://sasass.com"
+        "link": ""
       },
       {
         "first_name": "Manu",
         "last_name": "Chevalier",
         "role": "Dev",
-        "link": "https://sasass.com"
+        "link": ""
       },
       {
         "first_name": "Axel",
         "last_name": "Martin",
         "role": "Dev",
-        "link": "https://sasass.com"
+        "link": ""
       }
     ],
     "technologie_used": [
       {
         "label": "React",
-        "file_name": "react-original.svg"
+        "file_name": ""
       },
       {
         "label": "Sass",
