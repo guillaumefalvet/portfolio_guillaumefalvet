@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: 'Falvet Guillaume',
   description: 'Développeur web',
   other: {
-    'theme-color': '#52B2CF',
+    'theme-color': '#322315',
   },
 };
 

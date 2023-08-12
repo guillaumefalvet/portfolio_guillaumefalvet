@@ -1,28 +1,28 @@
 import NavBar from './components/NavBar';
 import Projects from './components/Projects';
 import Image from 'next/image';
-import profilePicture from '../../public/withoutbg.png';
+import profilePicture2 from '../../public//JCG_0048 copie.png';
 import SocialMedia from './components/SocialMedia';
 
 export default function Home() {
-  const profilePictureWidth = 300;
+  const profilePictureWidth = 350;
   function getHeightAspectRation(width: number) {
-    const ratioWidth = 100;
-    const rationHeight = 113;
+    const ratioWidth = 150;
+    const rationHeight = 150;
     const aspectRatio = (width * rationHeight) / ratioWidth;
     return aspectRatio;
   }
   return (
-    <main className="px-10 bg-gradient-to-tl from-moonstone via-moonstone to-black xsm:px-5">
+    <main className="px-10 bg-gradient-to-t from-feldgrau via-almond to-umber xsm:px-5">
       <NavBar />
       <div className="flex justify-center">
-        <section className="max-w-screen-xl bg-black bg-opacity-50 rounded-3xl xsm:w-screen md:w-3/4 sm:w-auto text-white">
+        <section className="max-w-screen-xl bg-white bg-opacity-50 rounded-3xl xsm:w-screen md:w-3/4 sm:w-auto text-black">
           <div className="text-center p-10 py-10">
             <div className="flex flex-wrap justify-center mb-14">
               <div className="pb-5">
                 <Image
                   className="rounded-full shadow-lg md:mr-10 xsm:mr-0"
-                  src={profilePicture}
+                  src={profilePicture2}
                   width={profilePictureWidth}
                   height={getHeightAspectRation(profilePictureWidth)}
                   alt="Photo de profile de Guillaume Falvet"
