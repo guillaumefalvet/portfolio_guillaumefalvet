@@ -77,15 +77,15 @@ export default function Projects() {
                     })()}
                     {project.group_project && (
                       <>
-                        <p>Mon Rôle: {project.my_role}</p>
+                        <p>Moi: {project.my_role}</p>
                         <ul>
                           {project.other_members.map((member: Member) => (
                             <li key={member.first_name}>
                               <p>
                                 {member.role}:{' '}
-                                <a href={member.link} target="blank">
+                                <Link href={member.link} target="blank">
                                   {member.first_name} {member.last_name}
-                                </a>
+                                </Link>
                               </p>
                             </li>
                           ))}
