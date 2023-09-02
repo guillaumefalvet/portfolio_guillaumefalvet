@@ -48,7 +48,7 @@ export default function Home() {
             <SocialMedia />
 
             <p className="text-md py-5 leading-8 text-gray-800 mx-auto md:text-xl">
-              J&apos;ai 28 ans et j&apos;ai toujours été passionné par la
+              J&apos;ai 29 ans et j&apos;ai toujours été passionné par la
               technologie, en particulier le développement web. Mon parcours
               professionnel a été varié, commençant par le domaine du bâtiment
               où j&apos;ai exercé en tant que charpentier/menuisier, puis dans
