@@ -146,41 +146,9 @@
     "link_frontend": "/"
   },
   {
-    "name": "Website: FF Card collection",
-    "my_role": "dev",
-    "description": "J'ai développé une application web de collection de cartes Final Fantasy en utilisant Express, EJS, PG (datamapper maison) et Express Session. Les utilisateurs peuvent rechercher des cartes, créer des decks personnalisés sauvegardés localement, et explorer les détails des cartes.",
-    "group_project": false,
-    "other_members": [],
-    "technologie_used": [
-      {
-        "label": "NodeJS",
-        "file_name": "nodejs-original.svg"
-      },
-      {
-        "label": "Express",
-        "file_name": "express-original.svg"
-      },
-      {
-        "label": "Ejs",
-        "file_name": "ejs.svg"
-      },
-      {
-        "label": "PostgreSQL",
-        "file_name": "postgresql-original.svg"
-      },
-      {
-        "label": "JavaScript",
-        "file_name": "javascript-original.svg"
-      }
-    ],
-    "link_image": "final-fantasy-card-website.png",
-    "link_frontend": "https://final-fantasy-card-website-production.up.railway.app/",
-    "github_front": "https://github.com/guillaumefalvet/final-fantasy-card-website"
-  },
-  {
     "name": "Automatisation: Download Folder organizer",
     "my_role": "dev",
-    "description": "Petit logiciel d'Automatisation pour trier le dossier 'download' et le garder clean 👌, l'application range les fichiers dans un dossier spécifique selon leur extensions",
+    "description": "Petit logiciel d'Automatisation pour trier et organiser des dossier. L'application range les fichiers dans un dossier spécifique selon leur extensions",
     "group_project": false,
     "other_members": [],
     "technologie_used": [
