@@ -47,26 +47,16 @@ export default function Home() {
             </h3>
             <SocialMedia />
 
-            <p className="text-md py-5 leading-8 text-gray-800 mx-auto md:text-xl">
-              J&apos;ai 29 ans et j&apos;ai toujours été passionné par la
-              technologie, en particulier le développement web. Mon parcours
-              professionnel a été varié, commençant par le domaine du bâtiment
-              où j&apos;ai exercé en tant que charpentier/menuisier, puis dans
-              le secteur de la grande distribution en tant que magasinier et
-              responsable du rayon fruits et légumes. Finalement, j&apos;ai
-              trouvé ma place dans le domaine de la restauration en tant que
-              commis de cuisine en 2020, et j&apos;ai progressé pour devenir
-              second de cuisine/chef de partie. Après une période de préparation
-              intensive, j&apos;ai pris la décision en 2022 d&apos;entamer une
-              reconversion professionnelle dans le domaine du développement web.
-              J&apos;ai suivi une formation de six mois en tant que Développeur
-              Web et Web Mobile chez O&apos;clock, qui m&apos;a permis
-              d&apos;acquérir de solides compétences. La formation m&apos;a
-              également renforcé dans ma motivation et ma détermination à
-              poursuivre cette nouvelle carrière.
+            <p className="text-md py-5 leading-8 text-gray-800 mx-auto md:text-xl text-justify">
+              Mon parcours professionnel a été très diversifié, mais ma passion
+              constante a toujours été le monde numérique et l&apos;innovation.
+              Après avoir passé trois ans dans le secteur de la restauration,
+              j&apos;ai finalement entrepris ma reconversion professionnelle en
+              suivant une formation de six mois en tant que Développeur
+              fullstack JavaScript chez O&apos;clock.
             </p>
 
-            <p className="text-md py-5 leading-8 text-gray-800 mx-auto md:text-xl">
+            <p className="text-md py-5 leading-8 text-gray-800 mx-auto md:text-xl text-justify">
               N&apos;hésitez pas à me contacter si vous souhaitez en savoir plus
               sur mon parcours ou discuter de possibilités de collaboration. Je
               suis impatient de mettre mes compétences de développeur web au

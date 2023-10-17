@@ -59,7 +59,7 @@ export default function Projects() {
                       {project.name}
                     </h5>
                   </Link>
-                  <p className="font-normal text-gray-700 dark:text-gray-400">
+                  <p className="font-normal text-gray-700 dark:text-gray-400 text-justify">
                     {project.description}
                   </p>
                 </div>
