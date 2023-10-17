@@ -38,7 +38,6 @@ export default function Home() {
 
                 <h2 className="text-1xl py-2 md:text-2xl text-beige-react text-mint-cream text-left">
                   Actuellement en recherche d&apos; alternance pour Janvier 2024
-                  aux alentours de Montpellier
                 </h2>
               </div>
             </div>
