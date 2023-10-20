@@ -72,7 +72,7 @@ export default function Projects() {
                       if (project.group_project) {
                         return <p>Projet de groupe:</p>;
                       } else {
-                        return <p>Projet fait seule</p>;
+                        return <p>Projet solo</p>;
                       }
                     })()}
                     {project.group_project && (

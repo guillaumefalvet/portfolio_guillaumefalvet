@@ -1,6 +1,44 @@
 [
   {
-    "name": "Website: Esport Team",
+    "name": "Backend: Task Management App List",
+    "my_role": "dev",
+    "description": "Il s'agit d'une application de gestion de tâches simple construite avec NestJS, un framework Node.js. Elle vous permet de gérer et d'organiser efficacement des tâches. La première fonctionnalité de cette application vous permet de créer, lire, mettre à jour et supprimer des tâches en toute simplicité. De plus, elle offre une couche d'authentification et d'autorisation des utilisateurs pour garantir la sécurité des données. Les mots de passe sont hachés de manière sécurisée, et l'application prend en charge l'enregistrement et la connexion des utilisateurs",
+    "group_project": false,
+    "other_members": [],
+    "technologie_used": [
+      {
+        "label": "NodeJS",
+        "file_name": "nodejs-original.svg"
+      },
+      {
+        "label": "NestJS",
+        "file_name": "nestjs-plain.svg"
+      },
+      {
+        "label": "TypeScript",
+        "file_name": "typescript-original.svg"
+      },
+
+      {
+        "label": "PostgreSQL",
+        "file_name": "postgresql-original.svg"
+      },
+
+      {
+        "label": "TypeOrm",
+        "file_name": "typeorm-seeklogo.com.svg"
+      },
+      {
+        "label": "Docker",
+        "file_name": "docker-svgrepo-com.svg"
+      }
+    ],
+    "link_image": "nestjs.png",
+    "link_backend": "https://task-management-app-nestjs-production.up.railway.app/api",
+    "github_back": "https://github.com/guillaumefalvet/task-management-app-nestjs"
+  },
+  {
+    "name": "Fullstack: Esport Team",
     "my_role": "Lead Backend / Git Master",
     "description": "Application de gestion de contenu pour une équipe Esport fictif, il offre une présentation détaillée d'une équipe d'esport, des actualités, des profils des membres, une fonctionnalité de recrutement et un calendrier des événements. Dashboard admin pour gérer les contenus liés aux articles, à l'équipe, aux joueurs et aux événements.",
     "group_project": true,
@@ -75,7 +113,7 @@
     "github_back": "https://github.com/guillaumefalvet/esport-website-backend"
   },
   {
-    "name": "Website: Kanban List",
+    "name": "Fullstack: Kanban List",
     "my_role": "dev",
     "description": "Durant ma formation j'ai développé une application web en utilisant Express, Cors et Sequelize, basée sur le concept Kanban de Trello. Son backend gère les opérations essentielles, tandis que le front-end offre une interface utilisateur statique conviviale. Les utilisateurs peuvent organiser leurs tâches de manière fluide et intuitive, en suivant leur progression à travers des colonnes personnalisables. L'application facilite la gestion et la visualisation des projets grâce à son approche Kanban simplifiée.",
     "group_project": false,
@@ -115,7 +153,7 @@
     "github_front": "https://github.com/guillaumefalvet/kanban-list"
   },
   {
-    "name": "Website: Mon portfolio",
+    "name": "Frontend: Mon portfolio",
     "my_role": "dev",
     "description": "...",
     "group_project": false,
@@ -146,7 +184,7 @@
     "link_frontend": "/"
   },
   {
-    "name": "Automatisation: Download Folder organizer",
+    "name": "Software: Download Folder organizer",
     "my_role": "dev",
     "description": "Petit logiciel d'Automatisation pour trier et organiser des dossier. L'application range les fichiers dans un dossier spécifique selon leur extensions",
     "group_project": false,
