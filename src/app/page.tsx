@@ -33,11 +33,11 @@ export default function Home() {
                   Guillaume Falvet
                 </h1>
                 <h3 className="text-2xl py-2 md:text-3xl text-beige-react text-mint-cream dev-cursor text-left">
-                  Developpeur Fullstack JavaScript
+                  Developpeur Web
                 </h3>
 
                 <h2 className="text-1xl py-2 md:text-2xl text-beige-react text-mint-cream text-left">
-                  Actuellement en recherche d&apos; alternance pour Janvier 2024
+                  Actuellement en recherche d&apos;alternance pour Janvier 2024
                 </h2>
               </div>
             </div>
