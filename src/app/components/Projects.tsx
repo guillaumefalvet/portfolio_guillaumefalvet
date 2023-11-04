@@ -1,12 +1,12 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import JsonData from '../data/Projects.json';
+import Button from './Button';
 interface Project {
   name: string;
-  my_role: string;
+  my_role?: string;
   description: string;
   group_project: boolean;
-  other_members: Member[];
   technologie_used: Technology[];
   link_image: string;
   link_frontend?: string;
@@ -16,29 +16,21 @@ interface Project {
   github?: string;
 }
 
-interface Member {
-  first_name: string;
-  last_name: string;
-  role: string;
-  link: string;
-}
-
 interface Technology {
   label: string;
   file_name: string;
 }
+
 export default function Projects() {
   return (
     <>
-      <h3 className="text-4xl py-2 text-beige-react text-mint-cream text-center font-medium">
-        Projets
-      </h3>
+      <h3 className="text-4xl py-2 text-center font-medium">Projets</h3>
       <div className="flex flex-wrap justify-center p-10 py-10">
         {JsonData.map((project: Project) => {
           return (
             <div
               key={project.name}
-              className="m-2 w-96 xl:[width:35%] rounded-3xl shadow dark:bg-gray-800 dark:border-gray-700 bg-van-dyke bg-opacity-50 flex flex-col justify-between hover:shadow-[0_20px_50px_rgba(82,_178,_207,_0.7)]"
+              className="m-2 w-96 xl:[width:35%] rounded-3xl shadow bg-van-dyke bg-opacity-50 flex flex-col justify-between hover:shadow-[0_20px_50px_rgba(82,_178,_207,_0.7)]"
             >
               <div>
                 <Link
@@ -55,11 +47,11 @@ export default function Projects() {
                 </Link>
                 <div className="p-5">
                   <Link href="#">
-                    <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900">
+                    <h5 className="mb-2 text-2xl font-bold tracking-tight ">
                       {project.name}
                     </h5>
                   </Link>
-                  <p className="font-normal text-gray-700 dark:text-gray-400 text-justify">
+                  <p className="font-normal text-justify">
                     {project.description}
                   </p>
                 </div>
@@ -75,23 +67,6 @@ export default function Projects() {
                         return <p>Projet solo</p>;
                       }
                     })()}
-                    {project.group_project && (
-                      <>
-                        <p>Moi: {project.my_role}</p>
-                        <ul>
-                          {project.other_members.map((member: Member) => (
-                            <li key={member.first_name}>
-                              <p>
-                                {member.role}:{' '}
-                                <Link href={member.link} target="blank">
-                                  {member.first_name} {member.last_name}
-                                </Link>
-                              </p>
-                            </li>
-                          ))}
-                        </ul>
-                      </>
-                    )}
                   </div>
                   <p className=" text-center">Liste des technologies: </p>
                   {project.technologie_used.map((technology: Technology) => (
@@ -114,66 +89,19 @@ export default function Projects() {
                   ))}
                 </div>
                 <div className="mt-5 mx-auto text-center">
-                  {project.link_frontend ? (
-                    <a href={project.link_frontend} target="blank">
-                      <button
-                        type="button"
-                        className="py-2.5 px-5 mr-2 mb-2 text-sm font-medium text-gray-900 text-white focus:outline-none bg-feldgrau rounded-full border border-gray-200 hover:bg-moonstone hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
-                      >
-                        Front
-                      </button>
-                    </a>
-                  ) : (
-                    ''
+                  {project.link_frontend && (
+                    <Button url={project.link_frontend}>Front</Button>
                   )}
-                  {project.link_backend ? (
-                    <a href={project.link_backend} target="blank">
-                      <button
-                        type="button"
-                        className="py-2.5 px-5 mr-2 mb-2 text-sm font-medium text-gray-900 text-white focus:outline-none bg-feldgrau rounded-full border border-gray-200 hover:bg-moonstone hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
-                      >
-                        Docs API
-                      </button>
-                    </a>
-                  ) : (
-                    ''
+                  {project.link_backend && (
+                    <Button url={project.link_backend}>OPEN API DOCS</Button>
                   )}
-                  {project.github_front ? (
-                    <a href={project.github_front} target="blank">
-                      <button
-                        type="button"
-                        className="py-2.5 px-5 mr-2 mb-2 text-sm font-medium text-gray-900 text-white focus:outline-none bg-feldgrau rounded-full border border-gray-200 hover:bg-moonstone hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
-                      >
-                        Code
-                      </button>
-                    </a>
-                  ) : (
-                    ''
+                  {project.github_front && (
+                    <Button url={project.github_front}>Github Front</Button>
                   )}
-                  {project.github_back ? (
-                    <a href={project.github_back} target="blank">
-                      <button
-                        type="button"
-                        className="py-2.5 px-5 mr-2 mb-2 text-sm font-medium text-gray-900 text-white focus:outline-none bg-feldgrau rounded-full border border-gray-200 hover:bg-moonstone hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
-                      >
-                        Code API
-                      </button>
-                    </a>
-                  ) : (
-                    ''
+                  {project.github_back && (
+                    <Button url={project.github_back}>Github Back</Button>
                   )}
-                  {project.github ? (
-                    <a href={project.github} target="blank">
-                      <button
-                        type="button"
-                        className="py-2.5 px-5 mr-2 mb-2 text-sm font-medium text-gray-900 text-white focus:outline-none bg-feldgrau rounded-full border border-gray-200 hover:bg-moonstone hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
-                      >
-                        Github
-                      </button>
-                    </a>
-                  ) : (
-                    ''
-                  )}
+                  {project.github && <Button url={project.github}>Code</Button>}
                 </div>
               </div>
             </div>
