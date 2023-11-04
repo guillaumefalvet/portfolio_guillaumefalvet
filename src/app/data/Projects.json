@@ -1,7 +1,6 @@
 [
   {
     "name": "Backend: Task Management App List",
-    "my_role": "dev",
     "description": "Il s'agit d'une application de gestion de tâches simple construite avec NestJS, un framework Node.js. Elle vous permet de gérer et d'organiser efficacement des tâches. La première fonctionnalité de cette application vous permet de créer, lire, mettre à jour et supprimer des tâches en toute simplicité. De plus, elle offre une couche d'authentification et d'autorisation des utilisateurs pour garantir la sécurité des données. Les mots de passe sont hachés de manière sécurisée, et l'application prend en charge l'enregistrement et la connexion des utilisateurs",
     "group_project": false,
     "other_members": [],
@@ -42,32 +41,6 @@
     "my_role": "Lead Backend / Git Master",
     "description": "Application de gestion de contenu pour une équipe Esport fictif, il offre une présentation détaillée d'une équipe d'esport, des actualités, des profils des membres, une fonctionnalité de recrutement et un calendrier des événements. Dashboard admin pour gérer les contenus liés aux articles, à l'équipe, aux joueurs et aux événements.",
     "group_project": true,
-    "other_members": [
-      {
-        "first_name": "Quentin",
-        "last_name": "Joanon",
-        "role": "Lead dev front",
-        "link": "https://quentinjoanon.vercel.app/"
-      },
-      {
-        "first_name": "Ali",
-        "last_name": "Hadj Cherif",
-        "role": "Dev",
-        "link": ""
-      },
-      {
-        "first_name": "Manu",
-        "last_name": "Chevalier",
-        "role": "Dev",
-        "link": ""
-      },
-      {
-        "first_name": "Axel",
-        "last_name": "Martin",
-        "role": "Dev",
-        "link": ""
-      }
-    ],
     "technologie_used": [
       {
         "label": "React",
@@ -114,7 +87,6 @@
   },
   {
     "name": "Fullstack: Kanban List",
-    "my_role": "dev",
     "description": "Durant ma formation j'ai développé une application web en utilisant Express, Cors et Sequelize, basée sur le concept Kanban de Trello. Son backend gère les opérations essentielles, tandis que le front-end offre une interface utilisateur statique conviviale. Les utilisateurs peuvent organiser leurs tâches de manière fluide et intuitive, en suivant leur progression à travers des colonnes personnalisables. L'application facilite la gestion et la visualisation des projets grâce à son approche Kanban simplifiée.",
     "group_project": false,
     "other_members": [],
@@ -154,7 +126,6 @@
   },
   {
     "name": "Software: Download Folder organizer",
-    "my_role": "dev",
     "description": "Petit logiciel d'Automatisation pour trier et organiser des dossier. L'application range les fichiers dans un dossier spécifique selon leur extensions",
     "group_project": false,
     "other_members": [],
