@@ -1,3 +1,4 @@
+'use client';
 import NavBar from './components/NavBar';
 import Projects from './components/Projects';
 import SocialMedia from './components/SocialMedia';
