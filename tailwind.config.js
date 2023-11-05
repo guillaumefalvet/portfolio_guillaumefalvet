@@ -12,10 +12,6 @@ module.exports = {
       white: 'white',
       black: 'black',
       'van-dyke': '#3B322C',
-      feldgrau: '#4E6151',
-      moonstone: '#52B2CF',
-      almond: '#F0DCCA',
-      sage: '#FFFCD8',
       umber: '#322315',
     },
     extend: {
