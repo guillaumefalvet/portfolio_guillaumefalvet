@@ -1,9 +1,9 @@
-interface PropChildren {
+type ButtonProps = {
   children: string;
   url: string;
-}
+};
 
-export default function Button({ children, url }: PropChildren) {
+export default function Button({ children, url }: ButtonProps) {
   return (
     <a href={url} target="blank">
       <button
