@@ -20,8 +20,7 @@ export default function Home() {
               ma véritable passion. J&apos;ai décidé de faire de ma passion mon
               métier en entreprenant un voyage de reconversion professionnelle,
               qui m&apos;a permis d&apos;acquérir des compétences solides en
-              développement web et de devenir un concepteur développeur
-              d&apos;applications en devenir. Découvrez ici mes projets.
+              développement web. Découvrez ici mes projets.
             </Paragraph>
             <Projects />
           </div>
