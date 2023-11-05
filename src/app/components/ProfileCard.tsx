@@ -1,12 +1,12 @@
 import Image from 'next/image';
-import profilePicture2 from '../../../public/JCG_0048 copie.png';
+import profilePicture from '../assets/pfp.png';
 export default function ProfileCard() {
   return (
     <div className="p-10 py-10">
       <div className="flex flex-wrap justify-center mb-14">
         <Image
           className="rounded-full shadow-lg md:mr-10 xsm:mr-0"
-          src={profilePicture2}
+          src={profilePicture}
           width="350"
           alt="Photo de Guillaume Falvet"
         />
