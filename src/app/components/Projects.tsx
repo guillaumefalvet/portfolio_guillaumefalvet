@@ -1,6 +1,6 @@
 import Link from 'next/link';
-import Image from 'next/image';
-import JsonData from '../data/Projects.json';
+import Image, { StaticImageData } from 'next/image';
+import { projects } from './ProjectsData';
 import Button from './Button';
 interface Project {
   name: string;
@@ -8,7 +8,7 @@ interface Project {
   description: string;
   group_project: boolean;
   technologie_used: Technology[];
-  link_image: string;
+  link_image: StaticImageData;
   link_frontend?: string;
   link_backend?: string;
   github_front?: string;
@@ -18,15 +18,14 @@ interface Project {
 
 interface Technology {
   label: string;
-  file_name: string;
+  image: StaticImageData;
 }
-
 export default function Projects() {
   return (
     <>
       <h3 className="text-4xl py-2 text-center font-medium">Projets</h3>
       <div className="flex flex-wrap justify-center p-10 py-10">
-        {JsonData.map((project: Project) => {
+        {projects.map((project: Project) => {
           return (
             <div
               key={project.name}
@@ -41,7 +40,7 @@ export default function Projects() {
                     className="rounded-t-3xl w-full h-52 object-cover"
                     width={500}
                     height={500}
-                    src={`/${project.link_image}`}
+                    src={project.link_image}
                     alt={`preview of ${project.name} website`}
                   />
                 </Link>
@@ -79,7 +78,7 @@ export default function Projects() {
                         className="h-10 ml-1 mr-1"
                         height={45}
                         width={45}
-                        src={`./${technology.file_name}`}
+                        src={technology.image}
                         alt={technology.label}
                       />
                       <span className="group-hover:opacity-100 transition-opacity bg-gray-800  text-gray-100 absolute opacity-0 text-xl">
