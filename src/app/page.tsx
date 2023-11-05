@@ -1,51 +1,41 @@
 import NavBar from './components/NavBar';
 import Projects from './components/Projects';
-import Image from 'next/image';
-import profilePicture2 from '../../public//JCG_0048 copie.png';
 import SocialMedia from './components/SocialMedia';
 import Paragraph from './components/Paragraph';
+import ProfileCard from './components/ProfileCard';
 
 export default function Home() {
   return (
-    <main className="px-10 bg-gradient-to-t from-black via-umber to-umber xsm:px-5">
-      <NavBar />
-      <div className="flex justify-center">
-        <section className="max-w-screen-xl bg-white bg-opacity-50 rounded-3xl xsm:w-screen md:w-3/4 sm:w-auto text-black">
-          <div className="p-10 py-10">
-            <div className="flex flex-wrap justify-center mb-14">
-              <div className="pb-5">
-                <Image
-                  className="rounded-full shadow-lg md:mr-10 xsm:mr-0"
-                  src={profilePicture2}
-                  width="350"
-                  alt="Photo de Guillaume Falvet"
-                />
-              </div>
-              <div className="mt-10">
-                <h1 className="text-5xl py-2 font-medium md:text-6xl">
-                  Guillaume Falvet
-                </h1>
-                <h3 className="text-2xl py-2 md:text-4xl dev-cursor">
-                  Developpeur Web
-                </h3>
-
-                <h2 className="text-1xl py-2 md:text-3xl">
-                  Actuellement en recherche d&apos;alternance pour Janvier 2024
-                </h2>
-              </div>
-            </div>
+    <>
+      <main className="px-10 bg-gradient-to-t from-black via-umber to-umber xsm:px-5">
+        <NavBar />
+        <div className="flex justify-center">
+          <div className="max-w-screen-xl bg-white bg-opacity-50 rounded-3xl xsm:w-screen md:w-3/4 sm:w-auto text-black">
+            <ProfileCard />
             <SocialMedia />
-            <Paragraph>
-              N&apos;hésitez pas à me contacter si vous souhaitez en savoir plus
-              sur mon parcours ou discuter de possibilités de collaboration. Je
-              suis impatient de mettre mes compétences de développeur web au
-              service de projets passionnants.
+            <Paragraph title="À Propos">
+              Bonjour, je suis Guillaume Falvet, un passionné de développement
+              et de technologie. Mon parcours professionnel atypique m&apos;a
+              conduit vers le monde de la programmation, où j&apos;ai découvert
+              ma véritable passion. J&apos;ai décidé de faire de ma passion mon
+              métier en entreprenant un voyage de reconversion professionnelle,
+              qui m&apos;a permis d&apos;acquérir des compétences solides en
+              développement web et de devenir un concepteur développeur
+              d&apos;applications en devenir. Ce portfolio est le reflet de mon
+              engagement envers la création de solutions innovantes, de mon
+              désir constant d&apos;apprendre et de ma volonté de contribuer
+              positivement à l&apos;évolution de l&apos;univers numérique.
+              Découvrez ici mes projets, mon expérience et ma vision du
+              développement informatique, et n&apos;hésitez pas à me contacter
+              pour en savoir plus sur ce que je peux apporter à votre équipe.
             </Paragraph>
+            <Projects />
           </div>
-          <Projects />
-        </section>
-      </div>
-      <SocialMedia />
-    </main>
+        </div>
+      </main>
+      <footer>
+        <SocialMedia />
+      </footer>
+    </>
   );
 }
