@@ -21,13 +21,7 @@ export default function Home() {
               métier en entreprenant un voyage de reconversion professionnelle,
               qui m&apos;a permis d&apos;acquérir des compétences solides en
               développement web et de devenir un concepteur développeur
-              d&apos;applications en devenir. Ce portfolio est le reflet de mon
-              engagement envers la création de solutions innovantes, de mon
-              désir constant d&apos;apprendre et de ma volonté de contribuer
-              positivement à l&apos;évolution de l&apos;univers numérique.
-              Découvrez ici mes projets, mon expérience et ma vision du
-              développement informatique, et n&apos;hésitez pas à me contacter
-              pour en savoir plus sur ce que je peux apporter à votre équipe.
+              d&apos;applications en devenir. Découvrez ici mes projets.
             </Paragraph>
             <Projects />
           </div>
