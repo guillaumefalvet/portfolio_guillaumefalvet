@@ -1,9 +1,10 @@
 'use client';
-import NavBar from './components/NavBar';
-import Projects from './components/Projects';
-import SocialMedia from './components/SocialMedia';
-import Paragraph from './components/Paragraph';
-import ProfileCard from './components/ProfileCard';
+import NavBar from '@components/NavBar';
+import Projects from '@components/Projects';
+import SocialMedia from '@components/SocialMedia';
+import Paragraph from '@components/Paragraph';
+import ProfileCard from '@components/ProfileCard';
+import Contact from '@components/Contact';
 
 export default function Home() {
   return (
@@ -24,6 +25,7 @@ export default function Home() {
               développement web. Découvrez ici mes projets.
             </Paragraph>
             <Projects />
+            {/* <Contact /> */}
           </div>
         </div>
       </main>
