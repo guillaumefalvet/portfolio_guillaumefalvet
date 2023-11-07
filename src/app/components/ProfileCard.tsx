@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import profilePicture from '../assets/pfp.png';
+import profilePicture from '@assets/pfp.png';
 export default function ProfileCard() {
   return (
     <div className="p-10 py-10">

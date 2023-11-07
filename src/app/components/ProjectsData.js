@@ -1,25 +1,25 @@
 // Technologies icon
-import nodejsImage from '../assets/nodejs-original.svg';
-import nestjsImage from '../assets/nestjs-plain.svg';
-import typescriptImage from '../assets/typescript-original.svg';
-import postgresqlImage from '../assets/postgresql-original.svg';
-import typeormImage from '../assets/typeorm-seeklogo.com.svg';
-import dockerImage from '../assets/docker-svgrepo-com.svg';
-import reactImage from '../assets/react-original.svg';
-import sassImage from '../assets/sass-original.svg';
-import nextjsImage from '../assets/nextjs-original.svg';
-import expressImage from '../assets/express-original.svg';
-import javascriptImage from '../assets/javascript-original.svg';
-import eslintImage from '../assets/eslint-original.svg';
-import sequelizeImage from '../assets/sequelize-original.svg';
-import sortableJSImage from '../assets/sortable.svg';
-import viteImage from '../assets/vite.svg';
-import pythonImage from '../assets/python-original.svg';
+import nodejsImage from '@assets/nodejs-original.svg';
+import nestjsImage from '@assets/nestjs-plain.svg';
+import typescriptImage from '@assets/typescript-original.svg';
+import postgresqlImage from '@assets/postgresql-original.svg';
+import typeormImage from '@assets/typeorm-seeklogo.com.svg';
+import dockerImage from '@assets/docker-svgrepo-com.svg';
+import reactImage from '@assets/react-original.svg';
+import sassImage from '@assets/sass-original.svg';
+import nextjsImage from '@assets/nextjs-original.svg';
+import expressImage from '@assets/express-original.svg';
+import javascriptImage from '@assets/javascript-original.svg';
+import eslintImage from '@assets/eslint-original.svg';
+import sequelizeImage from '@assets/sequelize-original.svg';
+import sortableJSImage from '@assets/sortable.svg';
+import viteImage from '@assets/vite.svg';
+import pythonImage from '@assets/python-original.svg';
 
-import taskManagementAppImage from '../assets/nestjs.png';
-import victoryZoneImage from '../assets/victoryzone.png';
-import kanbanImage from '../assets/kanban.png';
-import downloadFolderImage from '../assets/logs.png';
+import taskManagementAppImage from '@assets/nestjs.png';
+import victoryZoneImage from '@assets/victoryzone.png';
+import kanbanImage from '@assets/kanban.png';
+import downloadFolderImage from '@assets/logs.png';
 
 export const projects = [
   {
