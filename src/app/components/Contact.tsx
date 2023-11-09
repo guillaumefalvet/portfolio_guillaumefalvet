@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import Input from './Input';
-import { emailFormValidation } from '../lib/validation/emailFormValidation';
+import Input from '@components/Input';
+import { emailFormValidation } from '@lib/objectValidation';
 
 type FormData = {
   email: string;
@@ -18,7 +18,7 @@ const initialFormData: FormData = {
   message: '',
 };
 export default function Contact() {
-  const [formData, setFormData] = useState(initialFormData);
+  const [formData, setFormData] = useState<FormData>(initialFormData);
 
   function handleChange(identifier: keyof FormData, value: string) {
     setFormData((previousData) => {

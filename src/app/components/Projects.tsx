@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Image, { StaticImageData } from 'next/image';
-import { projects } from './ProjectsData';
+import { projects } from '@components/ProjectsData';
 import Button from './Button';
 type ProjectType = {
   name: string;

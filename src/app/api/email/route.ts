@@ -2,7 +2,7 @@ import { NextResponse, type NextRequest } from 'next/server';
 import nodemailer from 'nodemailer';
 import Mail from 'nodemailer/lib/mailer';
 import emailTemplate from './emailTemplate';
-import { emailFormValidation } from '@/app/lib/validation/emailFormValidation';
+import { emailFormValidation } from '@lib/objectValidation';
 export async function POST(request: NextRequest) {
   try {
     const data = emailFormValidation.parse(await request.json());
