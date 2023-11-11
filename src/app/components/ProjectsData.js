@@ -78,7 +78,8 @@ export const projects = [
     ],
     link_image: kanbanImage,
     link_frontend: 'https://kanban-list-production.up.railway.app/',
-    github_front: 'https://github.com/guillaumefalvet/kanban-list',
+    github_front:
+      'https://github.com/guillaumefalvet/app-taskmanagement-list-express-vanillajs',
   },
   {
     name: 'Software: Download Folder organizer',
