@@ -1,14 +1,61 @@
-import Link from 'next/link';
-import {
-  AiFillGithub,
-  AiFillLinkedin,
-  AiFillTwitterSquare,
-} from 'react-icons/ai';
-export default function NavBar() {
+import { cn } from '@lib/utils'
+import Link from 'next/link'
+import { useState } from 'react'
+import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai'
+cn
+const NavBar = () => {
+  const [menuOpen, setMenuOpen] = useState(false)
   return (
-    <nav className="py-2 mb-12 flex justify-between md:w-3/4 mx-auto text-white">
-      <h2 className="font-samantha text-7xl">guillaume-f</h2>
-      <ul className="flex items-center">
+    <nav className="mx-auto mb-12 flex justify-between py-2 text-white md:w-3/4">
+      <h2 className="font-samantha text-5xl  sm:text-7xl">Falvet Guillaume</h2>
+
+      {/* Mobile burger icon */}
+      <div className="md:hidden">
+        <button
+          onClick={() => setMenuOpen(!menuOpen)}
+          className=" right-4 top-4
+           text-white focus:outline-none"
+        >
+          {menuOpen ? (
+            <svg
+              className="h-8 w-8"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </svg>
+          ) : (
+            <svg
+              className="h-8 w-8"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              />
+            </svg>
+          )}
+        </button>
+      </div>
+
+      <ul
+        className={cn(
+          'items-center gap-4 md:flex',
+          menuOpen ? 'absolute right-2 top-12 flex flex-col' : 'hidden'
+        )}
+      >
         <li>
           <Link
             target="_blank"
@@ -20,13 +67,30 @@ export default function NavBar() {
         </li>
         <li>
           <Link
-            className="bg-cyan-500 px-2 py-2 rounded-md ml-8 text-xl"
-            href="./cv_falvet_guillaume.pdf"
+            target="_blank"
+            className="text-2xl"
+            href="https://www.linkedin.com/in/guillaumefalvet/"
           >
+            <AiFillLinkedin />
+          </Link>
+        </li>
+        <li>
+          <Link
+            className="text-mainColor text-xl"
+            href="#projects"
+            onClick={() => setMenuOpen(false)}
+          >
+            PROJETS
+          </Link>
+        </li>
+        <li>
+          <Link className="text-xl" href="./cv_falvet_guillaume.pdf">
             CV
           </Link>
         </li>
       </ul>
     </nav>
-  );
+  )
 }
+
+export default NavBar
