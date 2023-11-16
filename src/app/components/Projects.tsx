@@ -1,35 +1,44 @@
-import Link from 'next/link';
-import Image, { StaticImageData } from 'next/image';
-import { projects } from '@components/ProjectsData';
-import Button from './Button';
+import Link from 'next/link'
+import Image, { StaticImageData } from 'next/image'
+import { projects } from '@components/ProjectsData'
+import Button from './ui/Button'
+import { cn } from '@lib/utils'
 type ProjectType = {
-  name: string;
-  my_role?: string;
-  description: string;
-  group_project: boolean;
-  technologie_used: TechnologyType[];
-  link_image: StaticImageData;
-  link_frontend?: string;
-  link_backend?: string;
-  github_front?: string;
-  github_back?: string;
-  github?: string;
-};
+  name: string
+  my_role?: string
+  description: string
+  group_project: boolean
+  technologie_used: TechnologyType[]
+  link_image: StaticImageData
+  link_frontend?: string
+  link_backend?: string
+  github_front?: string
+  github_back?: string
+  github?: string
+}
 
 type TechnologyType = {
-  label: string;
-  image: StaticImageData;
-};
+  label: string
+  image: StaticImageData
+}
 export default function Projects() {
   return (
-    <>
-      <h3 className="text-4xl py-2 text-center font-medium">Projets</h3>
-      <div className="flex flex-wrap justify-center p-10 py-10">
+    <div className="my-8">
+      <h3
+        id="projects"
+        className="text-accents py-2 text-center text-4xl font-medium"
+      >
+        Projets
+      </h3>
+      <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5">
         {projects.map((project: ProjectType) => {
           return (
             <div
               key={project.name}
-              className="m-2 w-96 xl:[width:35%] rounded-3xl shadow bg-van-dyke bg-opacity-50 flex flex-col justify-between hover:shadow-[0_20px_50px_rgba(82,_178,_207,_0.7)]"
+              className={cn(
+                'bg-main m-2 flex min-w-fit flex-col justify-between rounded-3xl shadow-xl',
+                'hover:shadow-orange'
+              )}
             >
               <div>
                 <Link
@@ -37,7 +46,7 @@ export default function Projects() {
                   target="_blank"
                 >
                   <Image
-                    className="rounded-t-3xl w-full h-52 object-cover"
+                    className="h-52 w-full rounded-t-3xl object-cover"
                     width={500}
                     height={500}
                     src={project.link_image}
@@ -50,7 +59,7 @@ export default function Projects() {
                       {project.name}
                     </h5>
                   </Link>
-                  <p className="font-normal text-justify">
+                  <p className="text-justify font-normal">
                     {project.description}
                   </p>
                 </div>
@@ -58,38 +67,36 @@ export default function Projects() {
 
               <div className="p-5">
                 <div>
-                  <div className="text-left mt-5">
-                    {(() => {
-                      if (project.group_project) {
-                        return <p>Projet de groupe:</p>;
-                      } else {
-                        return <p>Projet solo</p>;
-                      }
-                    })()}
+                  <div className="mt-5 text-left">
+                    {project.group_project ? (
+                      <p>Projet de groupe</p>
+                    ) : (
+                      <p>Projet solo</p>
+                    )}
                   </div>
                   <p className=" text-center">Liste des technologies: </p>
                   {project.technologie_used.map(
                     (technology: TechnologyType) => (
                       <div
                         key={technology.label}
-                        className="inline-block group p-2 mx-auto"
+                        className="group mx-auto inline-block p-2"
                       >
                         <Image
                           key={technology.label}
-                          className="h-10 ml-1 mr-1"
+                          className="ml-1 mr-1 h-10"
                           height={45}
                           width={45}
                           src={technology.image}
                           alt={technology.label}
                         />
-                        <span className="group-hover:opacity-100 transition-opacity bg-gray-800  text-gray-100 absolute opacity-0 text-xl">
+                        <span className="absolute bg-gray-800 text-xl  text-gray-100 opacity-0 transition-opacity group-hover:opacity-100">
                           {technology.label}
                         </span>
                       </div>
                     )
                   )}
                 </div>
-                <div className="mt-5 mx-auto text-center">
+                <div className="mx-auto mt-5 text-center">
                   {project.link_frontend && (
                     <Button url={project.link_frontend}>Front</Button>
                   )}
@@ -106,9 +113,9 @@ export default function Projects() {
                 </div>
               </div>
             </div>
-          );
+          )
         })}
       </div>
-    </>
-  );
+    </div>
+  )
 }
