@@ -6,9 +6,9 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Falvet Guillaume',
-  description: 'Développeur web',
+  description: 'Développeur Web Fullstack',
   other: {
-    'theme-color': '#322315',
+    'theme-color': '#090101',
   },
 }
 
