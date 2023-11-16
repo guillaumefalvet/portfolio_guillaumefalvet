@@ -23,10 +23,10 @@ type TechnologyType = {
 }
 export default function Projects() {
   return (
-    <div className="my-8">
+    <div className="my-8 sm:mx-12">
       <h3
         id="projects"
-        className="text-accents py-2 text-center text-4xl font-medium"
+        className="text-mainColor py-10 text-center text-4xl font-medium"
       >
         Projets
       </h3>
@@ -36,8 +36,8 @@ export default function Projects() {
             <div
               key={project.name}
               className={cn(
-                'bg-main m-2 flex min-w-fit flex-col justify-between rounded-3xl shadow-xl',
-                'hover:shadow-orange'
+                'bg-mainColor flex flex-col justify-between rounded-3xl bg-opacity-60 shadow-xl sm:min-w-[300px] sm:max-w-lg ',
+                'hover:shadow-light'
               )}
             >
               <div>
