@@ -24,7 +24,7 @@ const config: Config = {
       },
       fontFamily: {
         samantha: 'samantha-signature',
-        satochi: 'satochi',
+        satoshi: 'satoshi',
       },
     },
     screens: {
