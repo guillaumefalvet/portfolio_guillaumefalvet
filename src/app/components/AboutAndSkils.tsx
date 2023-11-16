@@ -86,11 +86,11 @@ export default function AboutAndSkils() {
           </li>
           <li>
             <Strong>NodeJS:</Strong> Utilisation avancée de NodeJS pour le
-            développement côté serveur.
+            développement côté backend.
           </li>
           <li>
             <Strong>Express et NestJS:</Strong> Expérience dans le développement
-            de serveurs avec Express et NestJS.
+            de backend avec Express et NestJS.
           </li>
           <li>
             <Strong>React:</Strong> Développement d&apos;interfaces utilisateur
@@ -101,8 +101,8 @@ export default function AboutAndSkils() {
         <H3>🗃️ Bases de données</H3>
         <ul>
           <li>
-            <Strong>PostgreSQL & MongoDB:</Strong> Manipulation experte de bases
-            de données relationnelles et NoSQL.
+            <Strong>PostgreSQL & MongoDB:</Strong> Utilisation de SGBD
+            relationnelles et NoSQL.
           </li>
         </ul>
 
@@ -122,7 +122,7 @@ export default function AboutAndSkils() {
           </li>
           <li>
             <Strong>Rigueur:</Strong> Développée lors de mes années
-            d&apos;expérience en tant que charpentier.
+            d&apos;expérience en tant que cuisinier.
           </li>
           <li>
             <Strong>Travail d&apos;équipe:</Strong> Expérience dans des projets
