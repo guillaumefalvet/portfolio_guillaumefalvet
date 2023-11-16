@@ -1,5 +1,6 @@
-/** @type {import('tailwindcss').Config} */
-module.exports = {
+import type { Config } from 'tailwindcss'
+import * as colors from 'tailwindcss/colors'
+const config: Config = {
   content: [
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
@@ -7,10 +8,11 @@ module.exports = {
   ],
   theme: {
     colors: {
-      transparent: 'transparent',
-      current: 'currentColor',
-      white: 'white',
-      black: 'black',
+      ...colors,
+      background: '#F1121208',
+      main: '#FD644A7D',
+      orange: '#fff5d6',
+      accents: '#cf4307',
       'van-dyke': '#3B322C',
       umber: '#322315',
     },
@@ -22,6 +24,7 @@ module.exports = {
       },
       fontFamily: {
         samantha: 'samantha-signature',
+        satochi: 'satochi',
       },
     },
     screens: {
@@ -42,5 +45,13 @@ module.exports = {
       // => @media (min-width: 1536px) { ... }
     },
   },
-  plugins: [],
-};
+  plugins: [require('daisyui')],
+  daisyui: {
+    themes: false, // false: only light + dark | true: all themes | array: specific themes like this ["light", "dark", "cupcake"]
+    // name of one of the included themes for dark mode
+    base: false, // applies background color and foreground color for root element by default
+    styled: true, // include daisyUI colors and design decisions for all components
+  },
+}
+
+export default config
