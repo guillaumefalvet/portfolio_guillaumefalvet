@@ -6,7 +6,7 @@ import {
   AiFillTwitterSquare,
 } from 'react-icons/ai'
 
-const Footer = () => {
+export default function Footer() {
   return (
     <footer>
       <div className="flex justify-center gap-2 py-3 text-4xl text-white">
@@ -26,5 +26,3 @@ const Footer = () => {
     </footer>
   )
 }
-
-export default Footer
