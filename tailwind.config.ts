@@ -1,27 +1,23 @@
-/** @type {import('tailwindcss').Config} */
-module.exports = {
+import type { Config } from 'tailwindcss'
+import * as colors from 'tailwindcss/colors'
+const config: Config = {
   content: [
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
+  plugins: [require('daisyui')],
   theme: {
     colors: {
-      transparent: 'transparent',
-      current: 'currentColor',
-      white: 'white',
-      black: 'black',
-      'van-dyke': '#3B322C',
-      umber: '#322315',
+      ...colors,
+      background: '#090101',
+      mainColor: '#cf4307',
+      light: '#fff5d6',
     },
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-      },
       fontFamily: {
         samantha: 'samantha-signature',
+        satoshi: 'satoshi',
       },
     },
     screens: {
@@ -42,5 +38,6 @@ module.exports = {
       // => @media (min-width: 1536px) { ... }
     },
   },
-  plugins: [],
-};
+}
+
+export default config
