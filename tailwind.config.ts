@@ -6,22 +6,15 @@ const config: Config = {
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
+  plugins: [require('daisyui')],
   theme: {
     colors: {
       ...colors,
-      background: '#F1121208',
-      main: '#FD644A7D',
-      orange: '#fff5d6',
-      accents: '#cf4307',
-      'van-dyke': '#3B322C',
-      umber: '#322315',
+      background: '#090101',
+      mainColor: '#cf4307',
+      light: '#fff5d6',
     },
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-      },
       fontFamily: {
         samantha: 'samantha-signature',
         satoshi: 'satoshi',
@@ -44,13 +37,6 @@ const config: Config = {
       '2xl': '1536px',
       // => @media (min-width: 1536px) { ... }
     },
-  },
-  plugins: [require('daisyui')],
-  daisyui: {
-    themes: false, // false: only light + dark | true: all themes | array: specific themes like this ["light", "dark", "cupcake"]
-    // name of one of the included themes for dark mode
-    base: false, // applies background color and foreground color for root element by default
-    styled: true, // include daisyUI colors and design decisions for all components
   },
 }
 
