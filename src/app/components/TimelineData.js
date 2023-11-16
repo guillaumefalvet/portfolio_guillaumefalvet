@@ -21,7 +21,7 @@ export const timelineData = [
     description: `Responsable du rayon des fruits et légumes dans un supermarché est chargé de superviser l'approvisionnement, la présentation, et la qualité des produits, tout en assurant une gestion efficace du rayon pour garantir la satisfaction des clients.`,
   },
   {
-    name: 'Charpentier',
+    name: 'Charpentier Menuisier',
     startingTime: '2013',
     description: `De la réalisation des plans, la fabrication jusqu'au montage des structures bois.`,
   },
