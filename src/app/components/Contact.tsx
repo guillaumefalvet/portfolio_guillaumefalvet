@@ -74,7 +74,7 @@ export default function Contact() {
             onChange={(event) => handleChange('message', event.target.value)}
           ></textarea>
         </div>
-        <Button submit={true}>Envoyer</Button>
+        <Button>Envoyer</Button>
       </form>
     </div>
   )

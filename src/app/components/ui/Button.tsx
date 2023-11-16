@@ -3,10 +3,9 @@ import Link from 'next/link'
 type ButtonProps = {
   children: string
   url?: string
-  submit?: boolean
 }
 
-export default function Button({ children, url, submit = false }: ButtonProps) {
+export default function Button({ children, url }: ButtonProps) {
   const buttonClasses = [
     // basic style from-background to-mainColor mb-2  me-2 mt-4 rounded-lg bg-gradient-to-r
     ' mb-2  me-2 mt-4 rounded-lg bg-white px-5 py-2.5 text-center text-sm font-medium text-black',
