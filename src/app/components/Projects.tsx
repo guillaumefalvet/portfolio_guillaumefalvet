@@ -3,6 +3,8 @@ import Image, { StaticImageData } from 'next/image'
 import { projects } from '@components/ProjectsData'
 import Button from './ui/Button'
 import { cn } from '@lib/utils'
+import { motion } from 'framer-motion'
+import { fadeInAnimationVariants } from './Timeline'
 type ProjectType = {
   name: string
   my_role?: string
@@ -21,23 +23,30 @@ type TechnologyType = {
   label: string
   image: StaticImageData
 }
+
 export default function Projects() {
   return (
     <div className="my-8 sm:mx-12">
       <h3
         id="projects"
-        className="text-mainColor py-10 text-center text-4xl font-medium"
+        className="py-10 text-center text-4xl font-medium text-mainColor"
       >
-        Projets
+        Réalisations
       </h3>
-      <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5">
-        {projects.map((project: ProjectType) => {
+      <div className="flex w-full flex-wrap items-center justify-center gap-6 ">
+        {projects.map((project: ProjectType, index) => {
           return (
-            <div
+            <motion.div
+              variants={fadeInAnimationVariants}
+              initial="initial"
+              whileHover={{ scale: 1.02, transition: { duration: 0.2 } }}
+              whileInView="animate"
+              viewport={{ once: true }}
               key={project.name}
+              custom={index}
               className={cn(
-                'bg-mainColor flex flex-col justify-between rounded-3xl bg-opacity-60 shadow-xl sm:min-w-[300px] sm:max-w-lg ',
-                'hover:shadow-light'
+                'flex h-[900px] w-96 flex-col justify-between rounded-xl bg-stone-600 p-2 shadow-sm',
+                'hover:shadow-2xl hover:shadow-light'
               )}
             >
               <div>
@@ -46,7 +55,7 @@ export default function Projects() {
                   target="_blank"
                 >
                   <Image
-                    className="h-52 w-full rounded-t-3xl object-cover"
+                    className="h-52 w-full rounded-xl object-cover"
                     width={500}
                     height={500}
                     src={project.link_image}
@@ -55,7 +64,7 @@ export default function Projects() {
                 </Link>
                 <div className="p-5">
                   <Link href="#">
-                    <h5 className="mb-2 text-2xl font-bold tracking-tight ">
+                    <h5 className="mb-2 text-2xl font-bold tracking-tight text-light">
                       {project.name}
                     </h5>
                   </Link>
@@ -74,24 +83,25 @@ export default function Projects() {
                       <p>Projet solo</p>
                     )}
                   </div>
-                  <p className=" text-center">Liste des technologies: </p>
+                  {project.technologie_used.length === 1 ? (
+                    <p className="text-center">La technologie utilisée: </p>
+                  ) : (
+                    <p className="text-center">Les technologies utilisées: </p>
+                  )}
                   {project.technologie_used.map(
                     (technology: TechnologyType) => (
                       <div
                         key={technology.label}
-                        className="group mx-auto inline-block p-2"
+                        className="mx-auto inline-block"
                       >
                         <Image
                           key={technology.label}
                           className="ml-1 mr-1 h-10"
-                          height={45}
-                          width={45}
+                          height={35}
+                          width={35}
                           src={technology.image}
                           alt={technology.label}
                         />
-                        <span className="absolute bg-gray-800 text-xl  text-gray-100 opacity-0 transition-opacity group-hover:opacity-100">
-                          {technology.label}
-                        </span>
                       </div>
                     )
                   )}
@@ -112,7 +122,7 @@ export default function Projects() {
                   {project.github && <Button url={project.github}>Code</Button>}
                 </div>
               </div>
-            </div>
+            </motion.div>
           )
         })}
       </div>
