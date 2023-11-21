@@ -1,7 +1,7 @@
 import { cn } from '@lib/utils'
 import { timelineData } from './TimelineData.js'
 import { motion } from 'framer-motion'
-const fadeInAnimationVariants = {
+export const fadeInAnimationVariants = {
   initial: {
     opacity: 0,
     y: 100,
@@ -17,10 +17,10 @@ const fadeInAnimationVariants = {
 export default function Timeline() {
   return (
     <div className="my-14">
-      <h3 className="text-mainColor py-5 text-center text-4xl font-medium">
+      <h3 className="py-5 text-center text-4xl font-medium text-mainColor">
         Parcours professionnel
       </h3>
-      <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
+      <ul className="timeline timeline-snap-icon timeline-vertical max-md:timeline-compact">
         {timelineData.map((activity, index) => (
           <motion.li
             key={index}
