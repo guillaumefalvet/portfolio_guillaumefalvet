@@ -45,7 +45,7 @@ export default function Projects() {
               key={project.name}
               custom={index}
               className={cn(
-                'flex h-[900px] w-96 flex-col justify-between rounded-xl bg-stone-600 p-2 shadow-sm',
+                'flex h-[920px] w-96 flex-col justify-between rounded-xl bg-stone-600 p-2 shadow-sm',
                 'hover:shadow-2xl hover:shadow-light'
               )}
             >
