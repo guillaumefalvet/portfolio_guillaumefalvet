@@ -21,7 +21,7 @@ export default function AboutAndSkils() {
         viewport={{ once: true }}
         className="flex max-w-4xl flex-col"
       >
-        <h2 className="text-mainColor py-2 text-center text-4xl font-medium">
+        <h2 className="py-2 text-center text-4xl font-medium text-mainColor">
           À Propos
         </h2>
 
@@ -46,7 +46,7 @@ export default function AboutAndSkils() {
           NodeJS et SQL.
         </p>
 
-        <H3>🎯 L&apos;Équilibre entre Frontend et Backend</H3>
+        <H3>🎯 Frontend et Backend</H3>
         <p>
           Au cours de ma formation, j&apos;ai développé un intérêt particulier
           pour les défis liés à la création de backend. Cependant, en tant que
@@ -75,7 +75,7 @@ export default function AboutAndSkils() {
         viewport={{ once: true }}
         className="flex max-w-4xl flex-col text-justify"
       >
-        <h2 className="text-mainColor py-2 text-center text-4xl font-medium">
+        <h2 className="py-2 text-center text-4xl font-medium text-mainColor">
           Compétences
         </h2>
         <H3>🚀 Langages de programmation</H3>
