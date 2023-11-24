@@ -88,23 +88,20 @@ export default function Projects() {
                   ) : (
                     <p className="text-center">Les technologies utilisées: </p>
                   )}
-                  {project.technologie_used.map(
-                    (technology: TechnologyType) => (
-                      <div
-                        key={technology.label}
-                        className="mx-auto inline-block"
-                      >
+                  <div className="flex flex-row items-center justify-center gap-2">
+                    {project.technologie_used.map(
+                      (technology: TechnologyType) => (
                         <Image
                           key={technology.label}
-                          className="ml-1 mr-1 h-10"
+                          className=""
                           height={35}
                           width={35}
                           src={technology.image}
                           alt={technology.label}
                         />
-                      </div>
-                    )
-                  )}
+                      )
+                    )}
+                  </div>
                 </div>
                 <div className="mx-auto mt-5 text-center">
                   {project.link_frontend && (
