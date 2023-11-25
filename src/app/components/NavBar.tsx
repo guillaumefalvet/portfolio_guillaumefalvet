@@ -4,7 +4,7 @@ import { useState } from 'react'
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai'
 cn
 const NavBar = () => {
-  const [menuOpen, setMenuOpen] = useState(false)
+  const [menuOpen, setMenuOpen] = useState<boolean>(false)
   return (
     <nav className="mx-auto mb-12 flex justify-between py-2 text-white md:w-3/4">
       <h2 className="font-samantha text-5xl  sm:text-7xl">Falvet Guillaume</h2>
@@ -76,7 +76,7 @@ const NavBar = () => {
         </li>
         <li>
           <Link
-            className="text-mainColor text-xl"
+            className="text-xl text-mainColor"
             href="#projects"
             onClick={() => setMenuOpen(false)}
           >
