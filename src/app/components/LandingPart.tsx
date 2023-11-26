@@ -30,9 +30,9 @@ export default function LandingPart() {
         />
       </div>
       <div className="flex flex-wrap justify-center py-2">
-        <h3 className="dev-cursor  to-white  text-5xl font-extrabold text-mainColor">
+        <h2 className="dev-cursor  to-white  text-5xl font-extrabold text-mainColor">
           Developpeur Web
-        </h3>
+        </h2>
       </div>
 
       {/* arrow down animation if the scroll state is true*/}
