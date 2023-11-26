@@ -1,13 +1,13 @@
-import { cn } from '@lib/utils'
+import { twClsxMerge } from '@lib/utils'
 import Link from 'next/link'
 import { useState } from 'react'
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai'
-cn
+
 const NavBar = () => {
   const [menuOpen, setMenuOpen] = useState<boolean>(false)
   return (
     <nav className="mx-auto mb-12 flex justify-between py-2 text-white md:w-3/4">
-      <h2 className="font-samantha text-5xl  sm:text-7xl">Falvet Guillaume</h2>
+      <h1 className="font-samantha text-5xl  sm:text-7xl">Falvet Guillaume</h1>
 
       {/* Mobile burger icon */}
       <div className="md:hidden">
@@ -51,7 +51,7 @@ const NavBar = () => {
       </div>
 
       <ul
-        className={cn(
+        className={twClsxMerge(
           'items-center gap-4 md:flex',
           menuOpen ? 'absolute right-2 top-12 flex flex-col' : 'hidden'
         )}
