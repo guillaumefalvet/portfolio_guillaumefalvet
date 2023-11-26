@@ -1,6 +1,13 @@
 type H3Props = {
   children: string
-}
-export default function H3({ children }: H3Props) {
-  return <h3 className="my-3 text-center text-xl font-bold">{children}</h3>
+} & React.HTMLProps<HTMLHeadingElement>
+export default function H3({ children, ...props }: H3Props) {
+  return (
+    <h3
+      {...props}
+      className="py-6 text-center text-4xl font-medium text-mainColor"
+    >
+      {children}
+    </h3>
+  )
 }
