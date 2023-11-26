@@ -1,6 +1,8 @@
-import H3 from './ui/H3'
+import H4 from './ui/H4'
 import { motion } from 'framer-motion'
 import Strong from './ui/Strong'
+import H3 from './ui/H3'
+
 const fadeInAnimationVariants = {
   initial: {
     opacity: 0,
@@ -21,11 +23,9 @@ export default function AboutAndSkils() {
         viewport={{ once: true }}
         className="flex max-w-4xl flex-col"
       >
-        <h2 className="py-2 text-center text-4xl font-medium text-mainColor">
-          À Propos
-        </h2>
+        <H3>À Propos</H3>
 
-        <H3>🚀 Mon Parcours Professionnel et Ma Passion</H3>
+        <H4>🚀 Mon Parcours Professionnel et Ma Passion</H4>
         <p>
           Mon parcours professionnel a évolué de manière diversifiée, mais ma
           passion pour le numérique et le développement a persisté comme une
@@ -34,7 +34,7 @@ export default function AboutAndSkils() {
           d&apos;expression.
         </p>
 
-        <H3>💡 Découverte de ma Voie à travers Python et O&apos;Clock</H3>
+        <H4>💡 Découverte de ma Voie à travers Python et O&apos;Clock</H4>
         <p>
           Initialement, j&apos;ai exploré le monde du développement en réalisant
           plusieurs projets en Python grâce à des formations Udemy et
@@ -46,7 +46,7 @@ export default function AboutAndSkils() {
           NodeJS et SQL.
         </p>
 
-        <H3>🎯 Frontend et Backend</H3>
+        <H4>🎯 Frontend et Backend</H4>
         <p>
           Au cours de ma formation, j&apos;ai développé un intérêt particulier
           pour les défis liés à la création de backend. Cependant, en tant que
@@ -56,9 +56,9 @@ export default function AboutAndSkils() {
           ligne.
         </p>
 
-        <H3>
+        <H4>
           🏆 Réussite chez O&apos;Clock et Orientation vers l&apos;Alternance
-        </H3>
+        </H4>
         <p>
           Grâce à mes efforts, j&apos;ai obtenu avec succès mon titre
           professionnel de DWWM chez O&apos;Clock, avec les encouragements du
@@ -75,10 +75,8 @@ export default function AboutAndSkils() {
         viewport={{ once: true }}
         className="flex max-w-4xl flex-col text-justify"
       >
-        <h2 className="py-2 text-center text-4xl font-medium text-mainColor">
-          Compétences
-        </h2>
-        <H3>🚀 Langages de programmation</H3>
+        <H3>Compétences</H3>
+        <H4>🚀 Langages de programmation</H4>
         <ul>
           <li>
             <Strong>Javascript:</Strong> Maîtrise de Javascript et Typescript
@@ -98,7 +96,7 @@ export default function AboutAndSkils() {
           </li>
         </ul>
 
-        <H3>🗃️ Bases de données</H3>
+        <H4>🗃️ Bases de données</H4>
         <ul>
           <li>
             <Strong>PostgreSQL & MongoDB:</Strong> Utilisation de SGBD
@@ -106,7 +104,7 @@ export default function AboutAndSkils() {
           </li>
         </ul>
 
-        <H3>🎨 Technologies web</H3>
+        <H4>🎨 Technologies web</H4>
         <ul>
           <li>
             <Strong>HTML, CSS:</Strong> Création de mises en page responsives et
@@ -114,7 +112,7 @@ export default function AboutAndSkils() {
           </li>
         </ul>
 
-        <H3>🔨🤝🧠 Compétences transverses</H3>
+        <H4>🔨🤝🧠 Compétences transverses</H4>
         <ul>
           <li>
             <Strong>Gestion du stress:</Strong> Acquise lors de mon expérience
@@ -134,7 +132,7 @@ export default function AboutAndSkils() {
           </li>
         </ul>
 
-        <H3>⚒️ Outils de développement</H3>
+        <H4>⚒️ Outils de développement</H4>
         <ul>
           <li>
             <Strong>Git:</Strong> Utilisation avancée de Git pour la gestion de
@@ -143,7 +141,7 @@ export default function AboutAndSkils() {
           </li>
         </ul>
 
-        <H3>🐳 Déploiement et intégration continue</H3>
+        <H4>🐳 Déploiement et intégration continue</H4>
         <ul>
           <li>
             <Strong>Docker:</Strong> Conteneurisation d&apos;applications pour
@@ -151,7 +149,7 @@ export default function AboutAndSkils() {
           </li>
         </ul>
 
-        <H3>🔄🔄 Méthodologies de développement</H3>
+        <H4>🔄🔄 Méthodologies de développement</H4>
         <ul>
           <li>
             <Strong>Scrum et Agile:</Strong> Participation à des équipes Scrum
@@ -160,7 +158,7 @@ export default function AboutAndSkils() {
           </li>
         </ul>
 
-        <H3>🌐🔒 Autres compétences</H3>
+        <H4>🌐🔒 Autres compétences</H4>
         <ul>
           <li>
             <Strong>WebSockets et RESTful API:</Strong> Mise en œuvre de
