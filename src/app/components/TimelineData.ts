@@ -1,4 +1,11 @@
-export const timelineData = [
+export interface TimelineDataType {
+  name: string
+  startingTime: string
+  description: string
+  descriptionList?: string[] | undefined // Optional property
+}
+// TODO: ADD A DURATION FIELD
+export const timelineData: TimelineDataType[] = [
   {
     name: "Titre Professionnel de Développeur Web et Web Mobile, École O'clock",
     startingTime: '2023',

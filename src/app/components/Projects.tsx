@@ -1,38 +1,28 @@
 import Link from 'next/link'
-import Image, { StaticImageData } from 'next/image'
-import { projects } from '@components/ProjectsData'
+import Image from 'next/image'
+import { projects, ProjectType, TechnologyType } from '@components/ProjectsData'
 import Button from './ui/Button'
-import { cn } from '@lib/utils'
+import { twClsxMerge } from '@lib/utils'
 import { motion } from 'framer-motion'
-import { fadeInAnimationVariants } from './Timeline'
-type ProjectType = {
-  name: string
-  my_role?: string
-  description: string
-  group_project: boolean
-  technologie_used: TechnologyType[]
-  link_image: StaticImageData
-  link_frontend?: string
-  link_backend?: string
-  github_front?: string
-  github_back?: string
-  github?: string
-}
+import H3 from './ui/H3'
 
-type TechnologyType = {
-  label: string
-  image: StaticImageData
+const fadeInAnimationVariants = {
+  initial: {
+    opacity: 0,
+    y: 100,
+  },
+  animate: (index: number) => ({
+    opacity: 1,
+    y: 0,
+    transition: {
+      delay: 0.01 * index,
+    },
+  }),
 }
-
 export default function Projects() {
   return (
     <div className="my-8 sm:mx-12">
-      <h3
-        id="projects"
-        className="py-10 text-center text-4xl font-medium text-mainColor"
-      >
-        Réalisations
-      </h3>
+      <H3 id="projects">Réalisations</H3>
       <div className="flex w-full flex-wrap items-center justify-center gap-6 ">
         {projects.map((project: ProjectType, index) => {
           return (
@@ -44,7 +34,7 @@ export default function Projects() {
               viewport={{ once: true }}
               key={project.name}
               custom={index}
-              className={cn(
+              className={twClsxMerge(
                 'flex h-[920px] w-96 flex-col justify-between rounded-xl bg-stone-600 p-2 shadow-sm',
                 'hover:shadow-2xl hover:shadow-light'
               )}

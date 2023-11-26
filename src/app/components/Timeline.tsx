@@ -1,7 +1,8 @@
-import { cn } from '@lib/utils'
-import { timelineData } from './TimelineData.js'
+import { twClsxMerge } from '@lib/utils'
+import { timelineData, TimelineDataType } from './TimelineData'
 import { motion } from 'framer-motion'
-export const fadeInAnimationVariants = {
+import H3 from './ui/H3'
+const fadeInAnimationVariants = {
   initial: {
     opacity: 0,
     y: 100,
@@ -16,12 +17,10 @@ export const fadeInAnimationVariants = {
 }
 export default function Timeline() {
   return (
-    <div className="my-14">
-      <h3 className="py-5 text-center text-4xl font-medium text-mainColor">
-        Parcours professionnel
-      </h3>
+    <div className="my-10">
+      <H3>Parcours professionnel</H3>
       <ul className="timeline timeline-snap-icon timeline-vertical max-md:timeline-compact">
-        {timelineData.map((activity, index) => (
+        {timelineData.map((activity: TimelineDataType, index) => (
           <motion.li
             key={index}
             variants={fadeInAnimationVariants}
@@ -45,7 +44,7 @@ export default function Timeline() {
               </svg>
             </div>
             <div
-              className={cn(
+              className={twClsxMerge(
                 // if its pair it will appear on the right else on the left
                 index % 2 ? 'timeline-start md:text-end' : 'timeline-end',
                 'mb-10'
@@ -56,8 +55,8 @@ export default function Timeline() {
               {activity.description}
 
               {activity.descriptionList &&
-                activity.descriptionList.map((_, index) => (
-                  <p key={index}>{activity.descriptionList[index]}</p>
+                activity.descriptionList?.map((item, index) => (
+                  <p key={index}>{item}</p>
                 ))}
             </div>
             <hr />

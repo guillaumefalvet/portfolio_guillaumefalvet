@@ -19,8 +19,28 @@ import taskManagementAppImage from '@assets/nestjs.png'
 import victoryZoneImage from '@assets/victoryzone.png'
 import kanbanImage from '@assets/kanban.png'
 import downloadFolderImage from '@assets/logs.png'
+import placeHolderImage from '@assets/placeholder.png'
+import { StaticImageData } from 'next/image'
+export type ProjectType = {
+  name: string
+  my_role?: string
+  description: string
+  group_project: boolean
+  technologie_used: TechnologyType[]
+  link_image: StaticImageData
+  link_frontend?: string
+  link_backend?: string
+  github_front?: string
+  github_back?: string
+  github?: string
+}
 
-export const projects = [
+export type TechnologyType = {
+  label: string
+  image: StaticImageData
+}
+
+export const projects: ProjectType[] = [
   {
     name: 'Backend: Task Management App List',
     description:
