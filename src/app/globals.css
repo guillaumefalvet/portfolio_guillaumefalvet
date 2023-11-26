@@ -2,31 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-/* :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-} */
-
 body {
-  font-family: 'samantha-signature', sans-serif;
-  margin: 0;
   overscroll-behavior: none;
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
 }
 @font-face {
   font-family: 'samantha-signature';
@@ -135,22 +112,5 @@ body {
   100% {
     transform: translate(0, 10px) rotate(45deg);
     opacity: 0;
-  }
-}
-/* background animation */
-.background-animate {
-  background-size: 200%;
-  -webkit-animation: AnimationName 5s ease infinite alternate;
-  -moz-animation: AnimationName 5s ease infinite alternate;
-  animation: AnimationName 5s ease infinite alternate;
-}
-
-@keyframes AnimationName {
-  0%,
-  100% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
   }
 }
