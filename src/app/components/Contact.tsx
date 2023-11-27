@@ -37,8 +37,6 @@ export default function Contact({
     subject: { isValid: false, message: '' },
     message: { isValid: false, message: '' },
   })
-  //TODO make a state for each field, make it so that the submit button is disabled by default, if all three states are true then the button becomes usable
-  //TODO add a character count for text field and a limit
 
   function handleChange(identifier: keyof FormDataType, value: string) {
     setFormFieldData((previousData) => {
