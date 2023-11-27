@@ -151,7 +151,7 @@ export default function Contact({
         <H3>Contactez-moi</H3>
         <div
           className={twClsxMerge(
-            'mb-6 xsm:w-[350px]',
+            'mb-6 xsm:w-[350px] md:w-full',
             'md:grid md:grid-cols-2 md:gap-6'
           )}
         >
