@@ -158,12 +158,17 @@ export default function Contact({
     <div className="mb-8 flex justify-center">
       <form action={handleSubmitAction}>
         <H3>Contactez-moi</H3>
-        <div className={twClsxMerge('mb-6', 'md:grid md:grid-cols-2 md:gap-6')}>
+        <div
+          className={twClsxMerge(
+            'mb-6 xsm:w-[350px]',
+            'md:grid md:grid-cols-2 md:gap-6'
+          )}
+        >
           <div>
             <Label>email</Label>
             <input
               className={twClsxMerge(
-                'bg-darkShade mb-2 rounded border border-stone-500 p-2 leading-tight text-white',
+                'bg-darkShade mb-2 rounded border border-stone-500 p-2 leading-tight text-white xsm:w-full',
                 isFormValid.email.message.length > 0 && 'border border-red-900'
               )}
               type="email"
@@ -178,7 +183,7 @@ export default function Contact({
             <Label>sujet</Label>
             <input
               className={twClsxMerge(
-                'bg-darkShade mb-2 rounded border border-stone-500 p-2 leading-tight text-white',
+                'bg-darkShade mb-2 rounded border border-stone-500 p-2 leading-tight text-white xsm:w-full',
                 isFormValid.subject.message.length > 0 &&
                   'border border-red-900'
               )}
@@ -196,7 +201,7 @@ export default function Contact({
             'bg-darkShade mb-2 block w-full rounded border border-stone-500 p-2 text-white',
             isFormValid.message.message.length > 0 && 'border border-red-900'
           )}
-          rows={6}
+          rows={8}
           value={formFieldData.message}
           onChange={(event) => handleChange('message', event.target.value)}
         ></textarea>
