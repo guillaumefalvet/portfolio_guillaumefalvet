@@ -190,7 +190,14 @@ export default function Contact({
           value={formFieldData.message}
           onChange={(event) => handleChange('message', event.target.value)}
         ></textarea>
-        <ErrorSpan data={isFormValid.message} />
+        <span className=" flex justify-between text-xs">
+          <ErrorSpan data={isFormValid.message} />
+          {formFieldData.message.length < 300 ? (
+            <p>{formFieldData.message.length}/300</p>
+          ) : (
+            <p className="text-red-400">300/300</p>
+          )}
+        </span>
 
         {/* BUTTON */}
         <div className="flex justify-center">
