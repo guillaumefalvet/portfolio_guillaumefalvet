@@ -16,12 +16,30 @@ const initialFormData = {
   subject: '',
   message: '',
 }
+
 const zodObject = {
   email: z.string().email(),
   subject: z.string().min(3).max(50),
   message: z.string().min(3).max(300),
 }
 const emailFormValidation = z.object(zodObject)
+
+// UI COMPONENT
+function ErrorSpan({ data }: { data: { message: string; isValid: boolean } }) {
+  return (
+    <span className="block h-4 text-xs italic text-red-400">
+      {data.message.length > 0 && <p>{data.message}</p>}
+    </span>
+  )
+}
+
+function Label({ children }: { children: string }) {
+  return (
+    <label className="mb-2 block text-xs font-bold uppercase tracking-wide text-white">
+      {children}
+    </label>
+  )
+}
 
 export default function Contact({
   setIsAHackerman,
@@ -130,13 +148,9 @@ export default function Contact({
     <div className="mb-8 flex justify-center">
       <form action={handleSubmitAction}>
         <H3>Contactez-moi</H3>
-
         <div className={twClsxMerge('mb-6', 'md:grid md:grid-cols-2 md:gap-6')}>
-          <p>
-            <label className="mb-2 block text-xs font-bold uppercase tracking-wide text-white">
-              email
-            </label>
-
+          <div>
+            <Label>email</Label>
             <input
               className={twClsxMerge(
                 'bg-darkShade mb-2 rounded border border-stone-500 p-2 leading-tight text-white',
@@ -147,16 +161,11 @@ export default function Contact({
               required
               onChange={(event) => handleChange('email', event.target.value)}
             />
-            <span className="block h-4 text-xs italic text-red-400">
-              {isFormValid.email.message.length > 0 &&
-                isFormValid.email.message}
-            </span>
-          </p>
-          <p>
-            <label className="mb-2 block text-xs font-bold uppercase tracking-wide text-white">
-              Sujet
-            </label>
+            <ErrorSpan data={isFormValid.email} />
+          </div>
 
+          <div>
+            <Label>sujet</Label>
             <input
               className={twClsxMerge(
                 'bg-darkShade mb-2 rounded border border-stone-500 p-2 leading-tight text-white',
@@ -167,16 +176,11 @@ export default function Contact({
               required
               onChange={(event) => handleChange('subject', event.target.value)}
             />
-            <span className="block h-4 text-xs italic text-red-400">
-              {isFormValid.subject.message.length > 0 &&
-                isFormValid.subject.message}
-            </span>
-          </p>
+            <ErrorSpan data={isFormValid.subject} />
+          </div>
         </div>
 
-        <label className="mb-2 block text-xs font-bold uppercase tracking-wide text-white">
-          Message:
-        </label>
+        <Label>message</Label>
         <textarea
           className={twClsxMerge(
             'bg-darkShade mb-2 block w-full rounded border border-stone-500 p-2 text-white',
@@ -186,10 +190,9 @@ export default function Contact({
           value={formFieldData.message}
           onChange={(event) => handleChange('message', event.target.value)}
         ></textarea>
-        <span className="block h-4 text-xs italic text-red-400">
-          {isFormValid.message.message.length > 0 &&
-            isFormValid.message.message}
-        </span>
+        <ErrorSpan data={isFormValid.message} />
+
+        {/* BUTTON */}
         <div className="flex justify-center">
           <button
             disabled={!isFormReadyToSubmit}
@@ -197,13 +200,16 @@ export default function Contact({
               'mb-2 me-2 mt-4 w-fit items-center rounded-lg px-5 py-2.5 text-center text-lg font-medium text-black',
               // hover style
               isFormReadyToSubmit
-                ? 'bg-white hover:bg-mainColor hover:text-white'
-                : 'bg-gray-400'
+                ? // Button is enabled
+                  'bg-white hover:bg-mainColor hover:text-white'
+                : // Button is disabled
+                  'bg-gray-400'
             )}
           >
             Envoyer
           </button>
         </div>
+
         <span className="mb-2 block h-6 text-center text-xs italic">
           {isError ? (
             <p className="text-xs text-red-400">{messageBanner}</p>
