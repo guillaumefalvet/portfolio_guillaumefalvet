@@ -1,6 +1,6 @@
 import { Dispatch, SetStateAction, useState } from 'react'
 import { twClsxMerge } from '@lib/utils'
-import emailAction from '../action/email/emailAction'
+import emailAction from '@action/email/emailAction'
 import { sanitize } from 'isomorphic-dompurify'
 import H3 from './ui/H3'
 
@@ -159,7 +159,7 @@ export default function Contact({
             <Label>email</Label>
             <input
               className={twClsxMerge(
-                'bg-darkShade mb-2 rounded border border-stone-500 p-2 leading-tight text-white xsm:w-full',
+                'mb-2 rounded border border-stone-500 bg-darkShade p-2 leading-tight text-white xsm:w-full',
                 isFormValid.email.message.length > 0 && 'border border-red-900'
               )}
               type="email"
@@ -174,7 +174,7 @@ export default function Contact({
             <Label>sujet</Label>
             <input
               className={twClsxMerge(
-                'bg-darkShade mb-2 rounded border border-stone-500 p-2 leading-tight text-white xsm:w-full',
+                'mb-2 rounded border border-stone-500 bg-darkShade p-2 leading-tight text-white xsm:w-full',
                 isFormValid.subject.message.length > 0 &&
                   'border border-red-900'
               )}
@@ -189,7 +189,7 @@ export default function Contact({
         <Label>message</Label>
         <textarea
           className={twClsxMerge(
-            'bg-darkShade mb-2 block w-full rounded border border-stone-500 p-2 text-white',
+            'mb-2 block w-full rounded border border-stone-500 bg-darkShade p-2 text-white',
             isFormValid.message.message.length > 0 && 'border border-red-900'
           )}
           rows={8}
