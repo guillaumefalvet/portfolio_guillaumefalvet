@@ -1,10 +1,33 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { projects, ProjectType, TechnologyType } from '@components/ProjectsData'
-import Button from './ui/Button'
+
 import { twClsxMerge } from '@lib/utils'
 import { motion } from 'framer-motion'
 import H3 from './ui/H3'
+type ButtonProps = {
+  children: string
+  url: string
+}
+
+function Button({ children, url }: ButtonProps) {
+  return (
+    <Link href={url} target="blank">
+      <button
+        type="button"
+        className={twClsxMerge(
+          // basic style
+          ' mb-2  me-2 mt-4 rounded-lg bg-white px-5 py-2.5 text-center text-sm font-medium text-black',
+          // hover style
+          'hover:bg-gradient-to-l hover:text-light',
+          'focus:outline-none focus:ring-4 focus:ring-light'
+        )}
+      >
+        {children}
+      </button>
+    </Link>
+  )
+}
 
 const fadeInAnimationVariants = {
   initial: {
