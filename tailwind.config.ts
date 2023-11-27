@@ -12,6 +12,7 @@ const config: Config = {
       ...colors,
       background: '#090101',
       mainColor: '#cf4307',
+      darkShade: '#2B2A33',
       light: '#fff5d6',
     },
     extend: {
