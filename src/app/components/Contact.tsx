@@ -31,6 +31,7 @@ export default function Contact({
   const [formFieldData, setFormFieldData] =
     useState<FormDataType>(initialFormData)
   const [isError, setIsError] = useState<boolean>(false)
+  const [isSubmitting, setIsSubmitting] = useState<boolean>(false)
   const [messageBanner, setMessageBanner] = useState<string>('')
   const [isFormValid, setIsFormValid] = useState({
     email: { isValid: false, message: '' },
@@ -57,8 +58,6 @@ export default function Contact({
           }
         })
       } catch (error: any) {
-        // Validation failed for this field
-        setIsError(true)
         setIsFormValid((prevData) => {
           return {
             ...prevData,
@@ -73,7 +72,13 @@ export default function Contact({
     })
   }
   async function handleSubmitAction() {
+    if (isSubmitting) {
+      setIsError(true)
+      setMessageBanner('Une erreur est survenue, veuillez actualiser la page')
+      return
+    }
     try {
+      setIsSubmitting(true)
       const { email, subject, message } = formFieldData
       /** SANITIZE THE BODY AGAINST XSS*/
       const sanitizedSubject = sanitize(subject)
@@ -110,6 +115,7 @@ export default function Contact({
       setIsError(true)
       setMessageBanner('An error has occurred')
     }
+    setIsSubmitting(false)
   }
   let isFormReadyToSubmit = false
   if (
@@ -119,6 +125,7 @@ export default function Contact({
   ) {
     isFormReadyToSubmit = true
   }
+
   return (
     <div className="mb-8 flex justify-center">
       <form action={handleSubmitAction}>
@@ -183,7 +190,6 @@ export default function Contact({
           {isFormValid.message.message.length > 0 &&
             isFormValid.message.message}
         </span>
-        {/* <Button>Envoyer</Button> */}
         <div className="flex justify-center">
           <button
             disabled={!isFormReadyToSubmit}
