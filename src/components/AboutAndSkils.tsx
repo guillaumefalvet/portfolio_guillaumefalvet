@@ -56,16 +56,14 @@ export default function AboutAndSkils() {
           ligne.
         </p>
 
-        <H4>
-          🏆 Réussite chez O&apos;Clock et Orientation vers l&apos;Alternance
-        </H4>
+        <H4>🏆 Réussite chez O&apos;Clock</H4>
         <p>
           Grâce à mes efforts, j&apos;ai obtenu avec succès mon titre
           professionnel de DWWM chez O&apos;Clock, avec les encouragements du
           jury pour la suite de ma carrière. Animé par le désir de compléter ma
-          formation par une expérience pratique, je suis à la recherche
-          d&apos;une <Strong>alternance</Strong> pour mettre en application mes
-          connaissances et contribuer activement à des projets concrets.
+          formation par une expérience pratique, je suis d&apos;une première
+          experience afin de mettre en application mes connaissances et
+          contribuer activement à des projets concrets.
         </p>
       </motion.div>
       <motion.div
