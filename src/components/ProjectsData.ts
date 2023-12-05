@@ -19,6 +19,7 @@ import taskManagementAppImage from '@assets/nestjs.png'
 import victoryZoneImage from '@assets/victoryzone.png'
 import kanbanImage from '@assets/kanban.png'
 import downloadFolderImage from '@assets/logs.png'
+import tailwindxssImage from '@assets/tailwindcss-plain.svg'
 import placeHolderImage from '@assets/placeholder.png'
 import { StaticImageData } from 'next/image'
 export type ProjectType = {
@@ -41,6 +42,22 @@ export type TechnologyType = {
 }
 
 export const projects: ProjectType[] = [
+  {
+    name: 'Frontend: Portfolio',
+    description:
+      "Mon portfolio propose une présentation de mes compétences, projets et expériences. Grâce à l'utilisation de technologies telles que React et Framer Motion, la navigation est fluide. Le design est amélioré avec Tailwind CSS, assurant à la fois la flexibilité et la cohérence visuelle.",
+    group_project: false,
+    technologie_used: [
+      { label: 'React', image: reactImage },
+      { label: 'TypeScript', image: typescriptImage },
+      { label: 'TailwindCss', image: tailwindxssImage },
+      { label: 'NextJS', image: nextjsImage },
+      { label: 'EsLint', image: eslintImage },
+    ],
+    link_image: placeHolderImage,
+    link_frontend: '/',
+    github: 'https://github.com/guillaumefalvet/portfolio_guillaumefalvet',
+  },
   {
     name: 'Backend: Task Management App List',
     description:
@@ -67,6 +84,7 @@ export const projects: ProjectType[] = [
     group_project: true,
     technologie_used: [
       { label: 'React', image: reactImage },
+      { label: 'TypeScript', image: typescriptImage },
       { label: 'Sass', image: sassImage },
       { label: 'NextJS', image: nextjsImage },
       { label: 'Express', image: expressImage },
