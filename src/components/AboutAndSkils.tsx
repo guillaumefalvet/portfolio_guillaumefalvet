@@ -48,8 +48,8 @@ export default function AboutAndSkils() {
 
         <H4>🎯 Frontend et Backend</H4>
         <p>
-          Au cours de ma formation, j&apos;ai développé un intérêt particulier
-          pour les défis liés à la création de backend. Cependant, en tant que
+          Durant la formation, j&apos;ai développé un intérêt particulier pour
+          les défis liés à la création de backend. Cependant, en tant que
           diplômé Fullstack, j&apos;ai également acquis une solide base en
           frontend, notamment avec ReactJS, que je continue d&apos;approfondir
           de manière autodidacte à travers des projets et des formations en
@@ -58,11 +58,11 @@ export default function AboutAndSkils() {
 
         <H4>🏆 Réussite chez O&apos;Clock</H4>
         <p>
-          Grâce à mes efforts, j&apos;ai obtenu avec succès mon titre
-          professionnel de DWWM chez O&apos;Clock, avec les encouragements du
-          jury pour la suite de ma carrière. Animé par le désir de compléter ma
-          formation par une expérience pratique, je suis d&apos;une première
-          experience afin de mettre en application mes connaissances et
+          Avec mon travaille durant ma formation, j&apos;ai obtenu avec succès
+          mon titre professionnel de DWWM chez O&apos;Clock, avec les
+          encouragements du jury pour la suite de ma carrière. Animé par le
+          désir de compléter ma formation par une expérience pratique, je suis
+          disponible afin de mettre en application mes connaissances et
           contribuer activement à des projets concrets.
         </p>
       </motion.div>
@@ -77,7 +77,7 @@ export default function AboutAndSkils() {
         <H4>🚀 Langages de programmation</H4>
         <ul>
           <li>
-            <Strong>Javascript:</Strong> Maîtrise de Javascript et Typescript
+            <Strong>Javascript:</Strong> Utilisation de Javascript et Typescript
             pour le développement web.
           </li>
           <li>
@@ -113,20 +113,22 @@ export default function AboutAndSkils() {
         <H4>🔨🤝🧠 Compétences transverses</H4>
         <ul>
           <li>
-            <Strong>Gestion du stress:</Strong> Acquise lors de mon expérience
-            en tant que chef de partie en cuisine.
+            <Strong>Sens des responsablitié: </Strong> Tout au long de mon
+            parcours professionnel, j&apos;ai développé un solide sens des
+            responsabilités en garantissant le respect des normes, la
+            satisfaction des clients, et une gestion efficace des tâches, que ce
+            soit en cuisine, en gestion de rayon, ou en tant que
+            charpentier-menuisier..
           </li>
           <li>
-            <Strong>Rigueur:</Strong> Développée lors de mes années
-            d&apos;expérience en tant que cuisinier.
+            <Strong>L&apos;anglais</Strong> Ma compétence en anglais en tant que
+            langue maternelle constitue une compétence transverse précieuse qui
+            facilite la communication fluide et l&apos;engagement efficace dans
+            des projets de développement à l&apos;échelle internationale.
           </li>
           <li>
             <Strong>Travail d&apos;équipe:</Strong> Expérience dans des projets
             collaboratifs, notamment en utilisant la méthode Scrum.
-          </li>
-          <li>
-            <Strong>Capacité d&apos;analyse:</Strong> Développée tout au long de
-            ma formation en développement web.
           </li>
         </ul>
 
