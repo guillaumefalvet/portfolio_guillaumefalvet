@@ -100,9 +100,9 @@ export const projects: ProjectType[] = [
     github_back: 'https://github.com/guillaumefalvet/esport-website-backend',
   },
   {
-    name: 'Fullstack: Kanban List',
+    name: 'Fullstack: Trello-like list',
     description:
-      "Durant ma formation j'ai développé une application web en utilisant Express, Cors et Sequelize, basée sur le concept Kanban de Trello. Son backend gère les opérations essentielles, tandis que le front-end offre une interface utilisateur statique conviviale. Les utilisateurs peuvent organiser leurs tâches de manière fluide et intuitive, en suivant leur progression à travers des colonnes personnalisables. L'application facilite la gestion et la visualisation des projets grâce à son approche Kanban simplifiée.",
+      "Durant ma formation j'ai développé une application web en utilisant Express, Cors et Sequelize, basée sur le concept de Trello. Son backend gère les opérations essentielles, tandis que le front-end offre une interface utilisateur statique conviviale. Les utilisateurs peuvent organiser leurs tâches de manière fluide et intuitive, en suivant leur progression à travers des colonnes personnalisables. L'application facilite la gestion et la visualisation des projets grâce à son approche Kanban simplifiée.",
     group_project: false,
     technologie_used: [
       { label: 'NodeJS', image: nodejsImage },
