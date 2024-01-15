@@ -93,7 +93,7 @@ export const projects: ProjectType[] = [
       { label: 'EsLint', image: eslintImage },
     ],
     link_image: victoryZoneImage,
-    link_frontend: 'https://www.victoryzone.team/',
+    link_frontend: 'https://victoryzone-front-production.up.railway.app/',
     link_backend:
       'https://esport-website-backend-production.up.railway.app/api-docs/',
     github_front: 'https://github.com/QuentinJoanon/VictoryZone-Front',
