@@ -72,8 +72,6 @@ export const projects: ProjectType[] = [
       { label: 'Docker', image: dockerImage },
     ],
     link_image: taskManagementAppImage,
-    link_backend:
-      'https://task-management-app-nestjs-production.up.railway.app/api',
     github: 'https://github.com/guillaumefalvet/task-management-app-nestjs',
   },
   {
@@ -114,8 +112,7 @@ export const projects: ProjectType[] = [
       { label: 'Vite', image: viteImage },
     ],
     link_image: kanbanImage,
-    link_frontend: 'https://kanban-list-production.up.railway.app/',
-    github_front:
+    github:
       'https://github.com/guillaumefalvet/app-taskmanagement-list-express-vanillajs',
   },
   {
